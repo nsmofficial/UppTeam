@@ -1,0 +1,337 @@
+{
+  "project": "RIVERSIDE COMMUNITY CLINIC",
+  "seed": 13,
+  "clean": false,
+  "files": {
+    "rev_a": "CD_Set_RevA.pdf",
+    "rev_b": "CD_Set_RevB.pdf",
+    "spec": "Project_Manual.pdf",
+    "boq": "BOQ_RevB.xlsx"
+  },
+  "defects": [
+    {
+      "id": "S13-01",
+      "kind": "spec_section_missing",
+      "description": "Section 08 41 13 is referenced by the door schedule and BOQ but is not in the project manual.",
+      "severity": "medium",
+      "accept": [
+        {
+          "type": "missing_info",
+          "entities": [
+            "SPEC:08 41 13"
+          ],
+          "sheets": [
+            "A-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "A-601",
+          "page": 2,
+          "bbox": [
+            40.0,
+            248.0,
+            660.0,
+            262.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S13-02",
+      "kind": "sheet_ref_missing",
+      "description": "A-101 references detail 3/A-501; A-501 is listed in the index but is not in the set.",
+      "severity": "medium",
+      "accept": [
+        {
+          "type": "missing_info",
+          "entities": [
+            "SHEET:A-501"
+          ],
+          "sheets": [
+            "A-101",
+            "G-001"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "A-101",
+          "page": 1,
+          "bbox": [
+            246.0,
+            666.0,
+            274.0,
+            694.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S13-03",
+      "kind": "sheet_not_indexed",
+      "description": "S-101 is in the set but missing from the G-001 sheet index.",
+      "severity": "low",
+      "accept": [
+        {
+          "type": "missing_info",
+          "entities": [
+            "SHEET:S-101"
+          ],
+          "sheets": [
+            "G-001",
+            "S-101"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "G-001",
+          "page": 0,
+          "bbox": [
+            60.0,
+            190.0,
+            390.0,
+            318.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S13-04",
+      "kind": "dim_chain",
+      "description": "A-101: bay 1-2 labelled 22'-6\"; chain no longer sums to overall dimension.",
+      "severity": "high",
+      "accept": [
+        {
+          "type": "dimension_conflict",
+          "entities": [
+            "GRID:1-2",
+            "GRID:1-4"
+          ],
+          "sheets": [
+            "A-101"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "A-101",
+          "page": 1,
+          "bbox": [
+            244.6,
+            132.3,
+            262.4,
+            140.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S13-05",
+      "kind": "equip_tag_undefined",
+      "description": "Equipment tag EF-4 on M-101 is not in the M-601 schedule.",
+      "severity": "medium",
+      "accept": [
+        {
+          "type": "missing_info",
+          "entities": [
+            "EQUIP:EF-4"
+          ],
+          "sheets": [
+            "M-101",
+            "M-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "M-101",
+          "page": 4,
+          "bbox": [
+            537.9,
+            554.0,
+            573.9,
+            565.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S13-06",
+      "kind": "equip_voltage",
+      "description": "RTU-1: M-601 says 460/3, E-601 feeds it from a 208/3 circuit.",
+      "severity": "high",
+      "accept": [
+        {
+          "type": "cross_discipline_conflict",
+          "entities": [
+            "EQUIP:RTU-1"
+          ],
+          "sheets": [
+            "M-601",
+            "E-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "E-601",
+          "page": 6,
+          "bbox": [
+            40.0,
+            108.0,
+            458.0,
+            122.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S13-07",
+      "kind": "equip_no_circuit",
+      "description": "EF-1 needs 120/1 power (M-601) but has no circuit on E-601.",
+      "severity": "high",
+      "accept": [
+        {
+          "type": "cross_discipline_conflict",
+          "entities": [
+            "EQUIP:EF-1"
+          ],
+          "sheets": [
+            "M-601",
+            "E-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "M-601",
+          "page": 5,
+          "bbox": [
+            40.0,
+            122.0,
+            674.0,
+            136.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S13-08",
+      "kind": "equip_breaker_small",
+      "description": "RTU-2: breaker 20 A on E-601 is below MCA 35 A on M-601.",
+      "severity": "high",
+      "accept": [
+        {
+          "type": "cross_discipline_conflict",
+          "entities": [
+            "EQUIP:RTU-2"
+          ],
+          "sheets": [
+            "M-601",
+            "E-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "E-601",
+          "page": 6,
+          "bbox": [
+            40.0,
+            94.0,
+            458.0,
+            108.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S13-09",
+      "kind": "boq_equip_qty",
+      "description": "BOQ prices 2 EA of EF-1; plan and schedule show 1.",
+      "severity": "medium",
+      "accept": [
+        {
+          "type": "quantity_mismatch",
+          "entities": [
+            "EQUIP:EF-1"
+          ],
+          "sheets": [
+            "BOQ",
+            "M-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "BOQ_RevB.xlsx",
+          "xlsx_sheet": "BOQ",
+          "row": 13
+        }
+      ]
+    },
+    {
+      "id": "S13-10",
+      "kind": "rev_unclouded",
+      "description": "M-601 EF-1 weight changed in Rev B without a revision cloud.",
+      "severity": "high",
+      "accept": [
+        {
+          "type": "revision_issue",
+          "entities": [
+            "EQUIP:EF-1"
+          ],
+          "sheets": [
+            "M-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "M-601",
+          "page": 5,
+          "bbox": null
+        }
+      ]
+    }
+  ],
+  "traps": [
+    {
+      "kind": "typ_of_n",
+      "entity": "EQUIP:VAV-1",
+      "note": "One plan tag marked (TYP. OF 4); schedule and BOQ say 4. A naive tag count reports 1."
+    },
+    {
+      "kind": "typ_no_count",
+      "entity": "EQUIP:VAV-2",
+      "note": "Plan tag marked TYP. without a count; plan quantity is unknowable from the sheet. Only a needs_review item is acceptable, never a confirmed mismatch."
+    },
+    {
+      "kind": "nic_excluded",
+      "entity": "EQUIP:EF-3",
+      "note": "NIC item on plan with no BOQ line is correct, not a quantity mismatch."
+    },
+    {
+      "kind": "do_not_scale",
+      "entity": "NOTE",
+      "note": "Sheet notes say DO NOT SCALE DRAWINGS; scale-based checks must stay probable, never confirmed."
+    }
+  ],
+  "legit_revision_changes": [
+    "A-101: new door (clouded)",
+    "A-601: new schedule row (clouded)",
+    "M-601: RTU-1 capacity revised (clouded)"
+  ]
+}

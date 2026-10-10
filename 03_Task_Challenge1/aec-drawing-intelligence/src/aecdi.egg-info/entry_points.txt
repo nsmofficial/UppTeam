@@ -1,0 +1,2 @@
+[console_scripts]
+aecdi = aecdi.cli:main

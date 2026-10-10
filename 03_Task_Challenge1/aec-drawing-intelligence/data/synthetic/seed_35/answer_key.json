@@ -1,0 +1,476 @@
+{
+  "project": "RIVERSIDE COMMUNITY CLINIC",
+  "seed": 35,
+  "clean": false,
+  "files": {
+    "rev_a": "CD_Set_RevA.pdf",
+    "rev_b": "CD_Set_RevB.pdf",
+    "spec": "Project_Manual.pdf",
+    "boq": "BOQ_RevB.xlsx"
+  },
+  "defects": [
+    {
+      "id": "S35-01",
+      "kind": "door_tag_duplicate",
+      "description": "Door tag 206 appears twice on A-101; door 207 is tagged 206.",
+      "severity": "medium",
+      "accept": [
+        {
+          "type": "tag_conflict",
+          "entities": [
+            "DOOR:206"
+          ],
+          "sheets": [
+            "A-101"
+          ]
+        },
+        {
+          "type": "missing_info",
+          "entities": [
+            "DOOR:207"
+          ],
+          "sheets": [
+            "A-601",
+            "A-101"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "A-101",
+          "page": 1,
+          "bbox": [
+            501.5,
+            365.6,
+            527.5,
+            377.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S35-02",
+      "kind": "door_field_blank",
+      "description": "Door 210: HDW SET is blank in the door schedule.",
+      "severity": "medium",
+      "accept": [
+        {
+          "type": "missing_info",
+          "entities": [
+            "DOOR:210"
+          ],
+          "sheets": [
+            "A-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "A-601",
+          "page": 2,
+          "bbox": [
+            40.0,
+            234.0,
+            660.0,
+            248.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S35-03",
+      "kind": "door_hw_undefined",
+      "description": "Door 205 references hardware set HW-9, not defined in 08 71 00.",
+      "severity": "medium",
+      "accept": [
+        {
+          "type": "missing_info",
+          "entities": [
+            "DOOR:205",
+            "HW:HW-9"
+          ],
+          "sheets": [
+            "A-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "A-601",
+          "page": 2,
+          "bbox": [
+            40.0,
+            150.0,
+            660.0,
+            164.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S35-04",
+      "kind": "door_spec_material",
+      "description": "Door 204 is type D1 / spec 08 14 16 (flush wood) but scheduled material is HM.",
+      "severity": "high",
+      "accept": [
+        {
+          "type": "spec_conflict",
+          "entities": [
+            "DOOR:204"
+          ],
+          "sheets": [
+            "A-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "A-601",
+          "page": 2,
+          "bbox": [
+            40.0,
+            136.0,
+            660.0,
+            150.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S35-05",
+      "kind": "spec_section_missing",
+      "description": "Section 08 41 13 is referenced by the door schedule and BOQ but is not in the project manual.",
+      "severity": "medium",
+      "accept": [
+        {
+          "type": "missing_info",
+          "entities": [
+            "SPEC:08 41 13"
+          ],
+          "sheets": [
+            "A-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "A-601",
+          "page": 2,
+          "bbox": [
+            40.0,
+            248.0,
+            660.0,
+            262.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S35-06",
+      "kind": "sheet_ref_missing",
+      "description": "A-101 references detail 3/A-501; A-501 is listed in the index but is not in the set.",
+      "severity": "medium",
+      "accept": [
+        {
+          "type": "missing_info",
+          "entities": [
+            "SHEET:A-501"
+          ],
+          "sheets": [
+            "A-101",
+            "G-001"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "A-101",
+          "page": 1,
+          "bbox": [
+            246.0,
+            598.5,
+            274.0,
+            626.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S35-07",
+      "kind": "sheet_not_indexed",
+      "description": "S-101 is in the set but missing from the G-001 sheet index.",
+      "severity": "low",
+      "accept": [
+        {
+          "type": "missing_info",
+          "entities": [
+            "SHEET:S-101"
+          ],
+          "sheets": [
+            "G-001",
+            "S-101"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "G-001",
+          "page": 0,
+          "bbox": [
+            60.0,
+            190.0,
+            390.0,
+            318.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S35-08",
+      "kind": "dim_xdisc",
+      "description": "Grid 2-3: A-101 = 21'-6\", S-101 = 23'-6\".",
+      "severity": "high",
+      "accept": [
+        {
+          "type": "dimension_conflict",
+          "entities": [
+            "GRID:2-3"
+          ],
+          "sheets": [
+            "S-101",
+            "A-101"
+          ]
+        },
+        {
+          "type": "dimension_conflict",
+          "entities": [
+            "GRID:1-4"
+          ],
+          "sheets": [
+            "S-101"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "S-101",
+          "page": 3,
+          "bbox": [
+            449.3,
+            132.3,
+            467.2,
+            140.8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S35-09",
+      "kind": "equip_tag_undefined",
+      "description": "Equipment tag EF-5 on M-101 is not in the M-601 schedule.",
+      "severity": "medium",
+      "accept": [
+        {
+          "type": "missing_info",
+          "entities": [
+            "EQUIP:EF-5"
+          ],
+          "sheets": [
+            "M-101",
+            "M-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "M-101",
+          "page": 4,
+          "bbox": [
+            471.1,
+            486.5,
+            507.1,
+            497.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S35-10",
+      "kind": "equip_no_circuit",
+      "description": "EF-1 needs 120/1 power (M-601) but has no circuit on E-601.",
+      "severity": "high",
+      "accept": [
+        {
+          "type": "cross_discipline_conflict",
+          "entities": [
+            "EQUIP:EF-1"
+          ],
+          "sheets": [
+            "M-601",
+            "E-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "M-601",
+          "page": 5,
+          "bbox": [
+            40.0,
+            122.0,
+            674.0,
+            136.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S35-11",
+      "kind": "equip_weight",
+      "description": "RTU-2: M-601 weight 1980 LB exceeds S-101 design max 1530 LB.",
+      "severity": "high",
+      "accept": [
+        {
+          "type": "cross_discipline_conflict",
+          "entities": [
+            "EQUIP:RTU-2"
+          ],
+          "sheets": [
+            "M-601",
+            "S-101"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "S-101",
+          "page": 3,
+          "bbox": [
+            487.5,
+            279.4,
+            634.5,
+            286.6
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S35-12",
+      "kind": "boq_equip_qty",
+      "description": "BOQ prices 2 EA of EF-2; plan and schedule show 1.",
+      "severity": "medium",
+      "accept": [
+        {
+          "type": "quantity_mismatch",
+          "entities": [
+            "EQUIP:EF-2"
+          ],
+          "sheets": [
+            "BOQ",
+            "M-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "BOQ_RevB.xlsx",
+          "xlsx_sheet": "BOQ",
+          "row": 14
+        }
+      ]
+    },
+    {
+      "id": "S35-13",
+      "kind": "rev_unclouded",
+      "description": "A-601 door 201 width changed 3'-0\" -> 3'-6\" in Rev B without a revision cloud.",
+      "severity": "high",
+      "accept": [
+        {
+          "type": "revision_issue",
+          "entities": [
+            "DOOR:201"
+          ],
+          "sheets": [
+            "A-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "A-601",
+          "page": 2,
+          "bbox": [
+            122.0,
+            94.0,
+            170.0,
+            108.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S35-14",
+      "kind": "boq_door_qty",
+      "description": "BOQ door type D2 quantity 2 does not match the door schedule.",
+      "severity": "high",
+      "accept": [
+        {
+          "type": "quantity_mismatch",
+          "entities": [
+            "DOORTYPE:D2"
+          ],
+          "sheets": [
+            "BOQ",
+            "A-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "BOQ_RevB.xlsx",
+          "xlsx_sheet": "BOQ",
+          "row": 7
+        }
+      ]
+    }
+  ],
+  "traps": [
+    {
+      "kind": "typ_of_n",
+      "entity": "EQUIP:VAV-1",
+      "note": "One plan tag marked (TYP. OF 4); schedule and BOQ say 4. A naive tag count reports 1."
+    },
+    {
+      "kind": "typ_no_count",
+      "entity": "EQUIP:VAV-2",
+      "note": "Plan tag marked TYP. without a count; plan quantity is unknowable from the sheet. Only a needs_review item is acceptable, never a confirmed mismatch."
+    },
+    {
+      "kind": "nic_excluded",
+      "entity": "EQUIP:EF-4",
+      "note": "NIC item on plan with no BOQ line is correct, not a quantity mismatch."
+    },
+    {
+      "kind": "do_not_scale",
+      "entity": "NOTE",
+      "note": "Sheet notes say DO NOT SCALE DRAWINGS; scale-based checks must stay probable, never confirmed."
+    }
+  ],
+  "legit_revision_changes": [
+    "A-101: new door (clouded)",
+    "A-601: new schedule row (clouded)",
+    "M-601: RTU-1 capacity revised (clouded)"
+  ]
+}

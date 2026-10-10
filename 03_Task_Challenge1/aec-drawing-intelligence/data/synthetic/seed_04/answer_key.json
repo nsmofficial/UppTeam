@@ -1,0 +1,323 @@
+{
+  "project": "RIVERSIDE COMMUNITY CLINIC",
+  "seed": 4,
+  "clean": false,
+  "files": {
+    "rev_a": "CD_Set_RevA.pdf",
+    "rev_b": "CD_Set_RevB.pdf",
+    "spec": "Project_Manual.pdf",
+    "boq": "BOQ_RevB.xlsx"
+  },
+  "defects": [
+    {
+      "id": "S04-01",
+      "kind": "door_tag_undefined",
+      "description": "Door tag 121 on A-101 has no row in the door schedule.",
+      "severity": "medium",
+      "accept": [
+        {
+          "type": "missing_info",
+          "entities": [
+            "DOOR:121"
+          ],
+          "sheets": [
+            "A-101",
+            "A-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "A-101",
+          "page": 1,
+          "bbox": [
+            501.5,
+            361.1,
+            527.5,
+            373.1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S04-02",
+      "kind": "door_spec_material",
+      "description": "Door 101 is type D1 / spec 08 14 16 (flush wood) but scheduled material is HM.",
+      "severity": "high",
+      "accept": [
+        {
+          "type": "spec_conflict",
+          "entities": [
+            "DOOR:101"
+          ],
+          "sheets": [
+            "A-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "A-601",
+          "page": 2,
+          "bbox": [
+            40.0,
+            94.0,
+            660.0,
+            108.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S04-03",
+      "kind": "equip_voltage",
+      "description": "RTU-2: M-601 says 460/3, E-601 feeds it from a 208/3 circuit.",
+      "severity": "high",
+      "accept": [
+        {
+          "type": "cross_discipline_conflict",
+          "entities": [
+            "EQUIP:RTU-2"
+          ],
+          "sheets": [
+            "M-601",
+            "E-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "E-601",
+          "page": 6,
+          "bbox": [
+            40.0,
+            164.0,
+            458.0,
+            178.0
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S04-04",
+      "kind": "equip_weight",
+      "description": "RTU-1: M-601 weight 2450 LB exceeds S-101 design max 2000 LB.",
+      "severity": "high",
+      "accept": [
+        {
+          "type": "cross_discipline_conflict",
+          "entities": [
+            "EQUIP:RTU-1"
+          ],
+          "sheets": [
+            "M-601",
+            "S-101"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "S-101",
+          "page": 3,
+          "bbox": [
+            249.7,
+            277.3,
+            396.8,
+            284.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S04-05",
+      "kind": "boq_nic_item",
+      "description": "EF-3 is NIC (by owner) but is priced in the BOQ.",
+      "severity": "medium",
+      "accept": [
+        {
+          "type": "quantity_mismatch",
+          "entities": [
+            "EQUIP:EF-3"
+          ],
+          "sheets": [
+            "BOQ",
+            "M-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "BOQ_RevB.xlsx",
+          "xlsx_sheet": "BOQ",
+          "row": 16
+        }
+      ]
+    },
+    {
+      "id": "S04-06",
+      "kind": "boq_equip_qty",
+      "description": "BOQ prices 2 EA of EF-2; plan and schedule show 1.",
+      "severity": "medium",
+      "accept": [
+        {
+          "type": "quantity_mismatch",
+          "entities": [
+            "EQUIP:EF-2"
+          ],
+          "sheets": [
+            "BOQ",
+            "M-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "BOQ_RevB.xlsx",
+          "xlsx_sheet": "BOQ",
+          "row": 15
+        }
+      ]
+    },
+    {
+      "id": "S04-07",
+      "kind": "rev_not_issued",
+      "description": "M-601 content changed in Rev B but its title block still shows Rev A.",
+      "severity": "medium",
+      "accept": [
+        {
+          "type": "revision_issue",
+          "entities": [
+            "SHEET:M-601"
+          ],
+          "sheets": [
+            "M-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "M-601",
+          "page": 5,
+          "bbox": [
+            1048.0,
+            139.8,
+            1170.3,
+            758.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S04-08",
+      "kind": "rev_unclouded",
+      "description": "A-101 room 102 renamed to WORKROOM in Rev B without a revision cloud.",
+      "severity": "high",
+      "accept": [
+        {
+          "type": "revision_issue",
+          "entities": [
+            "ROOM:102"
+          ],
+          "sheets": [
+            "A-101"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "sheet": "A-101",
+          "page": 1,
+          "bbox": [
+            435.6,
+            240.1,
+            479.2,
+            248.5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S04-09",
+      "kind": "boq_not_updated",
+      "description": "Door 110A (D1) added in Rev B; BOQ D1 quantity not updated.",
+      "severity": "high",
+      "accept": [
+        {
+          "type": "quantity_mismatch",
+          "entities": [
+            "DOORTYPE:D1"
+          ],
+          "sheets": [
+            "BOQ",
+            "A-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "BOQ_RevB.xlsx",
+          "xlsx_sheet": "BOQ",
+          "row": 6
+        }
+      ]
+    },
+    {
+      "id": "S04-10",
+      "kind": "boq_door_qty",
+      "description": "BOQ door type D2 quantity 2 does not match the door schedule.",
+      "severity": "high",
+      "accept": [
+        {
+          "type": "quantity_mismatch",
+          "entities": [
+            "DOORTYPE:D2"
+          ],
+          "sheets": [
+            "BOQ",
+            "A-601"
+          ]
+        }
+      ],
+      "gt": [
+        {
+          "doc": "BOQ_RevB.xlsx",
+          "xlsx_sheet": "BOQ",
+          "row": 7
+        }
+      ]
+    }
+  ],
+  "traps": [
+    {
+      "kind": "typ_of_n",
+      "entity": "EQUIP:VAV-1",
+      "note": "One plan tag marked (TYP. OF 4); schedule and BOQ say 4. A naive tag count reports 1."
+    },
+    {
+      "kind": "typ_no_count",
+      "entity": "EQUIP:VAV-2",
+      "note": "Plan tag marked TYP. without a count; plan quantity is unknowable from the sheet. Only a needs_review item is acceptable, never a confirmed mismatch."
+    },
+    {
+      "kind": "nic_excluded",
+      "entity": "EQUIP:EF-3",
+      "note": "NIC item on plan with no BOQ line is correct, not a quantity mismatch."
+    },
+    {
+      "kind": "do_not_scale",
+      "entity": "NOTE",
+      "note": "Sheet notes say DO NOT SCALE DRAWINGS; scale-based checks must stay probable, never confirmed."
+    }
+  ],
+  "legit_revision_changes": [
+    "A-101: new door (clouded)",
+    "A-601: new schedule row (clouded)",
+    "M-601: RTU-1 capacity revised (clouded)"
+  ]
+}
