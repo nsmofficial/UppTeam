@@ -1,0 +1,1502 @@
+{
+  "nodes": [
+    {
+      "id": "SHEET:G-001",
+      "kind": "SHEET",
+      "evidence": [],
+      "title": "COVER SHEET AND SHEET INDEX",
+      "rev": "A",
+      "page": 0
+    },
+    {
+      "id": "SHEET:A-101",
+      "kind": "SHEET",
+      "evidence": [],
+      "title": "FIRST FLOOR PLAN",
+      "rev": "B",
+      "page": 1
+    },
+    {
+      "id": "SHEET:A-601",
+      "kind": "SHEET",
+      "evidence": [],
+      "title": "DOOR SCHEDULE AND DOOR TYPES",
+      "rev": "B",
+      "page": 2
+    },
+    {
+      "id": "SHEET:S-101",
+      "kind": "SHEET",
+      "evidence": [],
+      "title": "ROOF FRAMING PLAN",
+      "rev": "A",
+      "page": 3
+    },
+    {
+      "id": "SHEET:M-101",
+      "kind": "SHEET",
+      "evidence": [],
+      "title": "MECHANICAL FLOOR PLAN",
+      "rev": "A",
+      "page": 4
+    },
+    {
+      "id": "SHEET:M-601",
+      "kind": "SHEET",
+      "evidence": [],
+      "title": "MECHANICAL EQUIPMENT SCHEDULE",
+      "rev": "A",
+      "page": 5
+    },
+    {
+      "id": "SHEET:E-601",
+      "kind": "SHEET",
+      "evidence": [],
+      "title": "ELECTRICAL PANEL SCHEDULES",
+      "rev": "A",
+      "page": 6
+    },
+    {
+      "id": "DOOR:101",
+      "kind": "DOOR",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "101",
+          "role": "plan tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            234.16,
+            377.38,
+            245.84,
+            386.99
+          ]
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "101",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            40.0,
+            94.0,
+            84.0,
+            108.0
+          ]
+        }
+      ],
+      "type": "D1",
+      "material": "WD",
+      "fire_rating": "90 MIN",
+      "hardware": "HW-1"
+    },
+    {
+      "id": "DOOR:102",
+      "kind": "DOOR",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "102",
+          "role": "plan tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            414.16,
+            377.38,
+            425.84,
+            386.99
+          ]
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "102",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            40.0,
+            108.0,
+            84.0,
+            122.0
+          ]
+        }
+      ],
+      "type": "D1",
+      "material": "WD",
+      "fire_rating": "20 MIN",
+      "hardware": ""
+    },
+    {
+      "id": "DOOR:103",
+      "kind": "DOOR",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "103",
+          "role": "plan tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            594.16,
+            377.38,
+            605.84,
+            386.99
+          ]
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "103",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            40.0,
+            122.0,
+            84.0,
+            136.0
+          ]
+        }
+      ],
+      "type": "D1",
+      "material": "WD",
+      "fire_rating": "-",
+      "hardware": "HW-1"
+    },
+    {
+      "id": "DOOR:104",
+      "kind": "DOOR",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "104",
+          "role": "plan tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            774.16,
+            377.38,
+            785.84,
+            386.99
+          ]
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "104",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            40.0,
+            136.0,
+            84.0,
+            150.0
+          ]
+        }
+      ],
+      "type": "D1",
+      "material": "HM",
+      "fire_rating": "20 MIN",
+      "hardware": "HW-1"
+    },
+    {
+      "id": "DOOR:105",
+      "kind": "DOOR",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "105",
+          "role": "plan tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            202.66,
+            402.58,
+            214.34,
+            412.19
+          ]
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "105",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            40.0,
+            150.0,
+            84.0,
+            164.0
+          ]
+        }
+      ],
+      "type": "D1",
+      "material": "WD",
+      "fire_rating": "-",
+      "hardware": "HW-9"
+    },
+    {
+      "id": "DOOR:106",
+      "kind": "DOOR",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "106",
+          "role": "plan tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            324.16,
+            402.58,
+            335.84,
+            412.19
+          ]
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "106",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            40.0,
+            164.0,
+            84.0,
+            178.0
+          ]
+        }
+      ],
+      "type": "D1",
+      "material": "WD",
+      "fire_rating": "20 MIN",
+      "hardware": "HW-1"
+    },
+    {
+      "id": "DOOR:107",
+      "kind": "DOOR",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "107",
+          "role": "plan tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            445.66,
+            402.58,
+            457.34,
+            412.19
+          ]
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "107",
+          "role": "plan tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            562.66,
+            402.58,
+            574.34,
+            412.19
+          ]
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "107",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            40.0,
+            178.0,
+            84.0,
+            192.0
+          ]
+        }
+      ],
+      "type": "D2",
+      "material": "HM",
+      "fire_rating": "-",
+      "hardware": "HW-3"
+    },
+    {
+      "id": "DOOR:109",
+      "kind": "DOOR",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "109",
+          "role": "plan tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            684.16,
+            402.58,
+            695.84,
+            412.19
+          ]
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "109",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            40.0,
+            220.0,
+            84.0,
+            234.0
+          ]
+        }
+      ],
+      "type": "D2",
+      "material": "HM",
+      "fire_rating": "60 MIN",
+      "hardware": "HW-2"
+    },
+    {
+      "id": "DOOR:110",
+      "kind": "DOOR",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "110",
+          "role": "plan tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            805.66,
+            402.58,
+            817.34,
+            412.19
+          ]
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "110",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            40.0,
+            234.0,
+            84.0,
+            248.0
+          ]
+        }
+      ],
+      "type": "D1",
+      "material": "WD",
+      "fire_rating": "20 MIN",
+      "hardware": "HW-1"
+    },
+    {
+      "id": "DOOR:111A",
+      "kind": "DOOR",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "111A",
+          "role": "plan tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            191.33,
+            389.98,
+            207.67,
+            399.59
+          ]
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "111A",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            40.0,
+            248.0,
+            84.0,
+            262.0
+          ]
+        }
+      ],
+      "type": "D3",
+      "material": "ALUM",
+      "fire_rating": "-",
+      "hardware": "HW-4"
+    },
+    {
+      "id": "DOOR:111B",
+      "kind": "DOOR",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "111B",
+          "role": "plan tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            812.33,
+            389.98,
+            828.67,
+            399.59
+          ]
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "111B",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            40.0,
+            262.0,
+            84.0,
+            276.0
+          ]
+        }
+      ],
+      "type": "D3",
+      "material": "ALUM",
+      "fire_rating": "-",
+      "hardware": "HW-4"
+    },
+    {
+      "id": "DOOR:121",
+      "kind": "DOOR",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "121",
+          "role": "plan tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            535.66,
+            402.58,
+            547.34,
+            412.19
+          ]
+        }
+      ]
+    },
+    {
+      "id": "DOOR:108A",
+      "kind": "DOOR",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "108A",
+          "role": "plan tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            596.33,
+            402.58,
+            612.67,
+            412.19
+          ]
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "108A",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            40.0,
+            206.0,
+            84.0,
+            220.0
+          ]
+        }
+      ],
+      "type": "D1",
+      "material": "WD",
+      "fire_rating": "20 MIN",
+      "hardware": "HW-1"
+    },
+    {
+      "id": "DOOR:108",
+      "kind": "DOOR",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "108",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            40.0,
+            192.0,
+            84.0,
+            206.0
+          ]
+        }
+      ],
+      "type": "D2",
+      "material": "HM",
+      "fire_rating": "45 MIN",
+      "hardware": "HW-2"
+    },
+    {
+      "id": "DOOR:122",
+      "kind": "DOOR",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "122",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            40.0,
+            276.0,
+            84.0,
+            290.0
+          ]
+        }
+      ],
+      "type": "D1",
+      "material": "WD",
+      "fire_rating": "-",
+      "hardware": "HW-1"
+    },
+    {
+      "id": "EQUIP:RTU-1",
+      "kind": "EQUIP",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "RTU-1",
+          "role": "plan tag",
+          "sheet": "M-101",
+          "rev": "A",
+          "page": 4,
+          "bbox": [
+            320.43,
+            242.76,
+            339.57,
+            251.69
+          ]
+        }
+      ],
+      "qty": "1",
+      "volts": "460/3",
+      "weight": "2,450"
+    },
+    {
+      "id": "EQUIP:RTU-2",
+      "kind": "EQUIP",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "RTU-2",
+          "role": "plan tag",
+          "sheet": "M-101",
+          "rev": "A",
+          "page": 4,
+          "bbox": [
+            500.43,
+            242.76,
+            519.57,
+            251.69
+          ]
+        }
+      ],
+      "qty": "1",
+      "volts": "460/3",
+      "weight": "1,980"
+    },
+    {
+      "id": "EQUIP:RTU-3",
+      "kind": "EQUIP",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "RTU-3",
+          "role": "plan tag",
+          "sheet": "M-101",
+          "rev": "A",
+          "page": 4,
+          "bbox": [
+            680.43,
+            242.76,
+            699.57,
+            251.69
+          ]
+        }
+      ],
+      "qty": "1",
+      "volts": "460/3",
+      "weight": "1,650"
+    },
+    {
+      "id": "EQUIP:EF-1",
+      "kind": "EQUIP",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "EF-1",
+          "role": "plan tag",
+          "sheet": "M-101",
+          "rev": "A",
+          "page": 4,
+          "bbox": [
+            286.96,
+            537.51,
+            301.04,
+            546.44
+          ]
+        }
+      ],
+      "qty": "1",
+      "volts": "120/1",
+      "weight": "45"
+    },
+    {
+      "id": "EQUIP:EF-2",
+      "kind": "EQUIP",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "EF-2",
+          "role": "plan tag",
+          "sheet": "M-101",
+          "rev": "A",
+          "page": 4,
+          "bbox": [
+            718.96,
+            537.51,
+            733.04,
+            546.44
+          ]
+        }
+      ],
+      "qty": "1",
+      "volts": "120/1",
+      "weight": "85"
+    },
+    {
+      "id": "EQUIP:EF-3",
+      "kind": "EQUIP",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "EF-3",
+          "role": "plan tag (NIC)",
+          "sheet": "M-101",
+          "rev": "A",
+          "page": 4,
+          "bbox": [
+            790.96,
+            537.51,
+            805.04,
+            546.44
+          ]
+        }
+      ],
+      "qty": "1",
+      "volts": "120/1",
+      "weight": "40"
+    },
+    {
+      "id": "EQUIP:VAV-1",
+      "kind": "EQUIP",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "VAV-1",
+          "role": "plan tag (TYP. OF 4)",
+          "sheet": "M-101",
+          "rev": "A",
+          "page": 4,
+          "bbox": [
+            356.61,
+            366.51,
+            375.39,
+            375.44
+          ]
+        }
+      ],
+      "qty": "4",
+      "volts": "-",
+      "weight": "35"
+    },
+    {
+      "id": "EQUIP:VAV-2",
+      "kind": "EQUIP",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "VAV-2",
+          "role": "plan tag TYP.",
+          "sheet": "M-101",
+          "rev": "A",
+          "page": 4,
+          "bbox": [
+            644.61,
+            366.51,
+            663.39,
+            375.44
+          ]
+        }
+      ],
+      "qty": "3",
+      "volts": "-",
+      "weight": "30"
+    },
+    {
+      "id": "EQUIP:EF-4",
+      "kind": "EQUIP",
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "EF-4",
+          "role": "plan tag",
+          "sheet": "M-101",
+          "rev": "A",
+          "page": 4,
+          "bbox": [
+            538.96,
+            537.51,
+            553.04,
+            546.44
+          ]
+        }
+      ]
+    },
+    {
+      "id": "SPEC:08 11 13",
+      "kind": "SPEC",
+      "evidence": [],
+      "title": "HOLLOW METAL DOORS AND FRAMES",
+      "paragraphs": 6
+    },
+    {
+      "id": "SPEC:08 14 16",
+      "kind": "SPEC",
+      "evidence": [],
+      "title": "FLUSH WOOD DOORS",
+      "paragraphs": 6
+    },
+    {
+      "id": "SPEC:08 71 00",
+      "kind": "SPEC",
+      "evidence": [],
+      "title": "DOOR HARDWARE",
+      "paragraphs": 5
+    },
+    {
+      "id": "SPEC:23 34 16",
+      "kind": "SPEC",
+      "evidence": [],
+      "title": "CENTRIFUGAL HVAC FANS",
+      "paragraphs": 1
+    },
+    {
+      "id": "SPEC:23 36 00",
+      "kind": "SPEC",
+      "evidence": [],
+      "title": "AIR TERMINAL UNITS",
+      "paragraphs": 1
+    },
+    {
+      "id": "SPEC:23 74 13",
+      "kind": "SPEC",
+      "evidence": [],
+      "title": "PACKAGED OUTDOOR CENTRAL-STATION AIR-HANDLING UNITS",
+      "paragraphs": 4
+    },
+    {
+      "id": "BOQ:08-100",
+      "kind": "BOQ",
+      "evidence": [],
+      "desc": "Door type D1: flush wood, solid core, 3'-0\" x 7'-0\"",
+      "qty": 8.0,
+      "unit": "EA"
+    },
+    {
+      "id": "BOQ:08-110",
+      "kind": "BOQ",
+      "evidence": [],
+      "desc": "Door type D2: hollow metal, flush, 3'-0\" x 7'-0\"",
+      "qty": 2.0,
+      "unit": "EA"
+    },
+    {
+      "id": "BOQ:08-120",
+      "kind": "BOQ",
+      "evidence": [],
+      "desc": "Door type D3: alum. storefront pair, 6'-0\" x 7'-0\"",
+      "qty": 2.0,
+      "unit": "EA"
+    },
+    {
+      "id": "BOQ:08-700",
+      "kind": "BOQ",
+      "evidence": [],
+      "desc": "Door hardware, complete sets per 08 71 00",
+      "qty": 13.0,
+      "unit": "SET"
+    },
+    {
+      "id": "BOQ:23-100",
+      "kind": "BOQ",
+      "evidence": [],
+      "desc": "RTU-1 rooftop unit, gas/elec, 12.5 TON",
+      "qty": 1.0,
+      "unit": "EA"
+    },
+    {
+      "id": "BOQ:23-110",
+      "kind": "BOQ",
+      "evidence": [],
+      "desc": "RTU-2 rooftop unit, gas/elec, 7.5 TON",
+      "qty": 1.0,
+      "unit": "EA"
+    },
+    {
+      "id": "BOQ:23-120",
+      "kind": "BOQ",
+      "evidence": [],
+      "desc": "RTU-3 rooftop unit, gas/elec, 6 TON",
+      "qty": 1.0,
+      "unit": "EA"
+    },
+    {
+      "id": "BOQ:23-130",
+      "kind": "BOQ",
+      "evidence": [],
+      "desc": "EF-1 exhaust fan, ceiling, 300 CFM",
+      "qty": 2.0,
+      "unit": "EA"
+    },
+    {
+      "id": "BOQ:23-140",
+      "kind": "BOQ",
+      "evidence": [],
+      "desc": "EF-2 exhaust fan, ceiling, 500 CFM",
+      "qty": 1.0,
+      "unit": "EA"
+    },
+    {
+      "id": "BOQ:23-150",
+      "kind": "BOQ",
+      "evidence": [],
+      "desc": "EF-3 kitchen hood fan, 250 CFM",
+      "qty": 1.0,
+      "unit": "EA"
+    },
+    {
+      "id": "BOQ:23-160",
+      "kind": "BOQ",
+      "evidence": [],
+      "desc": "VAV-1 vav terminal, 8 in., 450 CFM",
+      "qty": 4.0,
+      "unit": "EA"
+    },
+    {
+      "id": "BOQ:23-170",
+      "kind": "BOQ",
+      "evidence": [],
+      "desc": "VAV-2 vav terminal, 6 in., 250 CFM",
+      "qty": 3.0,
+      "unit": "EA"
+    },
+    {
+      "id": "SHEET:A-501",
+      "kind": "SHEET",
+      "evidence": []
+    },
+    {
+      "id": "DOORTYPE:D1",
+      "kind": "DOORTYPE",
+      "evidence": []
+    },
+    {
+      "id": "DOORTYPE:D2",
+      "kind": "DOORTYPE",
+      "evidence": []
+    },
+    {
+      "id": "DOORTYPE:D3",
+      "kind": "DOORTYPE",
+      "evidence": []
+    },
+    {
+      "id": "SPEC:08 41 13",
+      "kind": "SPEC",
+      "evidence": []
+    },
+    {
+      "id": "CKT:HA-1,3,5",
+      "kind": "CKT",
+      "evidence": []
+    },
+    {
+      "id": "CKT:HA-13,15,17",
+      "kind": "CKT",
+      "evidence": []
+    },
+    {
+      "id": "CKT:LA-3",
+      "kind": "CKT",
+      "evidence": []
+    },
+    {
+      "id": "CKT:LA-5",
+      "kind": "CKT",
+      "evidence": []
+    },
+    {
+      "id": "CKT:LA-7,9,11",
+      "kind": "CKT",
+      "evidence": []
+    }
+  ],
+  "edges": [
+    {
+      "source": "SHEET:G-001",
+      "rel": "listed_in_index",
+      "target": "SHEET:G-001"
+    },
+    {
+      "source": "SHEET:A-101",
+      "rel": "listed_in_index",
+      "target": "SHEET:G-001"
+    },
+    {
+      "source": "SHEET:A-501",
+      "rel": "listed_in_index",
+      "target": "SHEET:G-001"
+    },
+    {
+      "source": "SHEET:A-601",
+      "rel": "listed_in_index",
+      "target": "SHEET:G-001"
+    },
+    {
+      "source": "SHEET:M-101",
+      "rel": "listed_in_index",
+      "target": "SHEET:G-001"
+    },
+    {
+      "source": "SHEET:M-601",
+      "rel": "listed_in_index",
+      "target": "SHEET:G-001"
+    },
+    {
+      "source": "SHEET:E-601",
+      "rel": "listed_in_index",
+      "target": "SHEET:G-001"
+    },
+    {
+      "source": "DOOR:101",
+      "rel": "appears_on",
+      "target": "SHEET:A-101"
+    },
+    {
+      "source": "DOOR:102",
+      "rel": "appears_on",
+      "target": "SHEET:A-101"
+    },
+    {
+      "source": "DOOR:103",
+      "rel": "appears_on",
+      "target": "SHEET:A-101"
+    },
+    {
+      "source": "DOOR:104",
+      "rel": "appears_on",
+      "target": "SHEET:A-101"
+    },
+    {
+      "source": "DOOR:105",
+      "rel": "appears_on",
+      "target": "SHEET:A-101"
+    },
+    {
+      "source": "DOOR:106",
+      "rel": "appears_on",
+      "target": "SHEET:A-101"
+    },
+    {
+      "source": "DOOR:107",
+      "rel": "appears_on",
+      "target": "SHEET:A-101"
+    },
+    {
+      "source": "DOOR:109",
+      "rel": "appears_on",
+      "target": "SHEET:A-101"
+    },
+    {
+      "source": "DOOR:110",
+      "rel": "appears_on",
+      "target": "SHEET:A-101"
+    },
+    {
+      "source": "DOOR:111A",
+      "rel": "appears_on",
+      "target": "SHEET:A-101"
+    },
+    {
+      "source": "DOOR:111B",
+      "rel": "appears_on",
+      "target": "SHEET:A-101"
+    },
+    {
+      "source": "DOOR:121",
+      "rel": "appears_on",
+      "target": "SHEET:A-101"
+    },
+    {
+      "source": "DOOR:108A",
+      "rel": "appears_on",
+      "target": "SHEET:A-101"
+    },
+    {
+      "source": "SHEET:A-101",
+      "rel": "references",
+      "target": "SHEET:A-601"
+    },
+    {
+      "source": "SHEET:A-101",
+      "rel": "references",
+      "target": "SHEET:A-501"
+    },
+    {
+      "source": "DOOR:101",
+      "rel": "defined_in",
+      "target": "SHEET:A-601"
+    },
+    {
+      "source": "DOOR:101",
+      "rel": "is_type",
+      "target": "DOORTYPE:D1"
+    },
+    {
+      "source": "DOORTYPE:D1",
+      "rel": "governed_by",
+      "target": "SPEC:08 14 16"
+    },
+    {
+      "source": "DOOR:102",
+      "rel": "defined_in",
+      "target": "SHEET:A-601"
+    },
+    {
+      "source": "DOOR:102",
+      "rel": "is_type",
+      "target": "DOORTYPE:D1"
+    },
+    {
+      "source": "DOOR:103",
+      "rel": "defined_in",
+      "target": "SHEET:A-601"
+    },
+    {
+      "source": "DOOR:103",
+      "rel": "is_type",
+      "target": "DOORTYPE:D1"
+    },
+    {
+      "source": "DOOR:104",
+      "rel": "defined_in",
+      "target": "SHEET:A-601"
+    },
+    {
+      "source": "DOOR:104",
+      "rel": "is_type",
+      "target": "DOORTYPE:D1"
+    },
+    {
+      "source": "DOOR:105",
+      "rel": "defined_in",
+      "target": "SHEET:A-601"
+    },
+    {
+      "source": "DOOR:105",
+      "rel": "is_type",
+      "target": "DOORTYPE:D1"
+    },
+    {
+      "source": "DOOR:106",
+      "rel": "defined_in",
+      "target": "SHEET:A-601"
+    },
+    {
+      "source": "DOOR:106",
+      "rel": "is_type",
+      "target": "DOORTYPE:D1"
+    },
+    {
+      "source": "DOOR:107",
+      "rel": "defined_in",
+      "target": "SHEET:A-601"
+    },
+    {
+      "source": "DOOR:107",
+      "rel": "is_type",
+      "target": "DOORTYPE:D2"
+    },
+    {
+      "source": "DOORTYPE:D2",
+      "rel": "governed_by",
+      "target": "SPEC:08 11 13"
+    },
+    {
+      "source": "DOOR:108",
+      "rel": "defined_in",
+      "target": "SHEET:A-601"
+    },
+    {
+      "source": "DOOR:108",
+      "rel": "is_type",
+      "target": "DOORTYPE:D2"
+    },
+    {
+      "source": "DOOR:108A",
+      "rel": "defined_in",
+      "target": "SHEET:A-601"
+    },
+    {
+      "source": "DOOR:108A",
+      "rel": "is_type",
+      "target": "DOORTYPE:D1"
+    },
+    {
+      "source": "DOOR:109",
+      "rel": "defined_in",
+      "target": "SHEET:A-601"
+    },
+    {
+      "source": "DOOR:109",
+      "rel": "is_type",
+      "target": "DOORTYPE:D2"
+    },
+    {
+      "source": "DOOR:110",
+      "rel": "defined_in",
+      "target": "SHEET:A-601"
+    },
+    {
+      "source": "DOOR:110",
+      "rel": "is_type",
+      "target": "DOORTYPE:D1"
+    },
+    {
+      "source": "DOOR:111A",
+      "rel": "defined_in",
+      "target": "SHEET:A-601"
+    },
+    {
+      "source": "DOOR:111A",
+      "rel": "is_type",
+      "target": "DOORTYPE:D3"
+    },
+    {
+      "source": "DOORTYPE:D3",
+      "rel": "governed_by",
+      "target": "SPEC:08 41 13"
+    },
+    {
+      "source": "DOOR:111B",
+      "rel": "defined_in",
+      "target": "SHEET:A-601"
+    },
+    {
+      "source": "DOOR:111B",
+      "rel": "is_type",
+      "target": "DOORTYPE:D3"
+    },
+    {
+      "source": "DOOR:122",
+      "rel": "defined_in",
+      "target": "SHEET:A-601"
+    },
+    {
+      "source": "DOOR:122",
+      "rel": "is_type",
+      "target": "DOORTYPE:D1"
+    },
+    {
+      "source": "SHEET:S-101",
+      "rel": "references",
+      "target": "SHEET:M-601"
+    },
+    {
+      "source": "EQUIP:RTU-1",
+      "rel": "supported_by",
+      "target": "SHEET:S-101"
+    },
+    {
+      "source": "EQUIP:RTU-2",
+      "rel": "supported_by",
+      "target": "SHEET:S-101"
+    },
+    {
+      "source": "EQUIP:RTU-3",
+      "rel": "supported_by",
+      "target": "SHEET:S-101"
+    },
+    {
+      "source": "EQUIP:RTU-1",
+      "rel": "appears_on",
+      "target": "SHEET:M-101"
+    },
+    {
+      "source": "EQUIP:RTU-2",
+      "rel": "appears_on",
+      "target": "SHEET:M-101"
+    },
+    {
+      "source": "EQUIP:RTU-3",
+      "rel": "appears_on",
+      "target": "SHEET:M-101"
+    },
+    {
+      "source": "EQUIP:EF-1",
+      "rel": "appears_on",
+      "target": "SHEET:M-101"
+    },
+    {
+      "source": "EQUIP:EF-2",
+      "rel": "appears_on",
+      "target": "SHEET:M-101"
+    },
+    {
+      "source": "EQUIP:EF-3",
+      "rel": "appears_on",
+      "target": "SHEET:M-101"
+    },
+    {
+      "source": "EQUIP:VAV-1",
+      "rel": "appears_on",
+      "target": "SHEET:M-101"
+    },
+    {
+      "source": "EQUIP:VAV-2",
+      "rel": "appears_on",
+      "target": "SHEET:M-101"
+    },
+    {
+      "source": "EQUIP:EF-4",
+      "rel": "appears_on",
+      "target": "SHEET:M-101"
+    },
+    {
+      "source": "SHEET:M-101",
+      "rel": "references",
+      "target": "SHEET:S-101"
+    },
+    {
+      "source": "SHEET:M-101",
+      "rel": "references",
+      "target": "SHEET:M-601"
+    },
+    {
+      "source": "EQUIP:RTU-1",
+      "rel": "defined_in",
+      "target": "SHEET:M-601"
+    },
+    {
+      "source": "EQUIP:RTU-1",
+      "rel": "governed_by",
+      "target": "SPEC:23 74 13"
+    },
+    {
+      "source": "EQUIP:RTU-2",
+      "rel": "defined_in",
+      "target": "SHEET:M-601"
+    },
+    {
+      "source": "EQUIP:RTU-2",
+      "rel": "governed_by",
+      "target": "SPEC:23 74 13"
+    },
+    {
+      "source": "EQUIP:RTU-3",
+      "rel": "defined_in",
+      "target": "SHEET:M-601"
+    },
+    {
+      "source": "EQUIP:RTU-3",
+      "rel": "governed_by",
+      "target": "SPEC:23 74 13"
+    },
+    {
+      "source": "EQUIP:EF-1",
+      "rel": "defined_in",
+      "target": "SHEET:M-601"
+    },
+    {
+      "source": "EQUIP:EF-1",
+      "rel": "governed_by",
+      "target": "SPEC:23 34 16"
+    },
+    {
+      "source": "EQUIP:EF-2",
+      "rel": "defined_in",
+      "target": "SHEET:M-601"
+    },
+    {
+      "source": "EQUIP:EF-2",
+      "rel": "governed_by",
+      "target": "SPEC:23 34 16"
+    },
+    {
+      "source": "EQUIP:EF-3",
+      "rel": "defined_in",
+      "target": "SHEET:M-601"
+    },
+    {
+      "source": "EQUIP:EF-3",
+      "rel": "governed_by",
+      "target": "SPEC:23 34 16"
+    },
+    {
+      "source": "EQUIP:VAV-1",
+      "rel": "defined_in",
+      "target": "SHEET:M-601"
+    },
+    {
+      "source": "EQUIP:VAV-1",
+      "rel": "governed_by",
+      "target": "SPEC:23 36 00"
+    },
+    {
+      "source": "EQUIP:VAV-2",
+      "rel": "defined_in",
+      "target": "SHEET:M-601"
+    },
+    {
+      "source": "EQUIP:VAV-2",
+      "rel": "governed_by",
+      "target": "SPEC:23 36 00"
+    },
+    {
+      "source": "SHEET:M-601",
+      "rel": "references",
+      "target": "SHEET:E-601"
+    },
+    {
+      "source": "SHEET:M-601",
+      "rel": "references",
+      "target": "SHEET:S-101"
+    },
+    {
+      "source": "EQUIP:RTU-1",
+      "rel": "fed_by",
+      "target": "CKT:HA-1,3,5"
+    },
+    {
+      "source": "EQUIP:RTU-3",
+      "rel": "fed_by",
+      "target": "CKT:HA-13,15,17"
+    },
+    {
+      "source": "EQUIP:EF-2",
+      "rel": "fed_by",
+      "target": "CKT:LA-3"
+    },
+    {
+      "source": "EQUIP:EF-3",
+      "rel": "fed_by",
+      "target": "CKT:LA-5"
+    },
+    {
+      "source": "EQUIP:RTU-2",
+      "rel": "fed_by",
+      "target": "CKT:LA-7,9,11"
+    },
+    {
+      "source": "BOQ:08-100",
+      "rel": "quantifies",
+      "target": "DOORTYPE:D1"
+    },
+    {
+      "source": "BOQ:08-110",
+      "rel": "quantifies",
+      "target": "DOORTYPE:D2"
+    },
+    {
+      "source": "BOQ:08-120",
+      "rel": "quantifies",
+      "target": "DOORTYPE:D3"
+    },
+    {
+      "source": "BOQ:23-100",
+      "rel": "quantifies",
+      "target": "EQUIP:RTU-1"
+    },
+    {
+      "source": "BOQ:23-110",
+      "rel": "quantifies",
+      "target": "EQUIP:RTU-2"
+    },
+    {
+      "source": "BOQ:23-120",
+      "rel": "quantifies",
+      "target": "EQUIP:RTU-3"
+    },
+    {
+      "source": "BOQ:23-130",
+      "rel": "quantifies",
+      "target": "EQUIP:EF-1"
+    },
+    {
+      "source": "BOQ:23-140",
+      "rel": "quantifies",
+      "target": "EQUIP:EF-2"
+    },
+    {
+      "source": "BOQ:23-150",
+      "rel": "quantifies",
+      "target": "EQUIP:EF-3"
+    },
+    {
+      "source": "BOQ:23-160",
+      "rel": "quantifies",
+      "target": "EQUIP:VAV-1"
+    },
+    {
+      "source": "BOQ:23-170",
+      "rel": "quantifies",
+      "target": "EQUIP:VAV-2"
+    }
+  ]
+}

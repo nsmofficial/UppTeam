@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AEC Drawing Intelligence – Implementation Roadmap, Cost Analysis & ROI Model</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #212529;
+    line-height: 1.5;
+    margin: 40px auto;
+    max-width: 900px;
+    padding: 0 20px;
+  }
+  .header-box {
+    border-bottom: 2px solid #1a365d;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+  }
+  .tag {
+    background-color: #ebf8ff;
+    color: #2b6cb0;
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 8px;
+    border-radius: 3px;
+    display: inline-block;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  h1 { color: #1a365d; margin: 0 0 8px 0; font-size: 24px; }
+  .subtitle { color: #4a5568; font-size: 14px; margin: 0 0 15px 0; }
+  .meta-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+  .meta-grid strong { color: #2d3748; display: block; }
+  h2 {
+    color: #1a365d;
+    font-size: 16px;
+    border-left: 4px solid #1a365d;
+    padding-left: 10px;
+    margin-top: 30px;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  p, li { font-size: 13px; color: #2d3748; }
+  ul { padding-left: 20px; margin-top: 5px; }
+  li { margin-bottom: 4px; }
+  .callout {
+    padding: 12px 15px;
+    border-radius: 4px;
+    margin: 15px 0;
+    font-size: 12.5px;
+  }
+  .callout.info { background: #ebf8ff; border-left: 4px solid #3182ce; color: #2b6cb0; }
+  .callout.success { background: #f0fff4; border-left: 4px solid #38a169; color: #276749; }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 15px 0;
+    font-size: 12px;
+  }
+  th {
+    background: #1a365d;
+    color: #ffffff;
+    font-weight: 600;
+    text-align: left;
+    padding: 8px 10px;
+  }
+  td {
+    padding: 7px 10px;
+    border-bottom: 1px solid #e2e8f0;
+    vertical-align: top;
+  }
+  tr:nth-child(even) td { background: #f7fafc; }
+  .badge-pass { color: #276749; font-weight: bold; }
+  .footer {
+    margin-top: 40px;
+    padding-top: 15px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 11px;
+    color: #718096;
+    display: flex;
+    justify-content: space-between;
+  }
+</style>
+</head>
+<body>
+
+<div class="header-box">
+  <div class="tag">Deliverable 04 — Strategy Report</div>
+  <h1>AEC Drawing Intelligence: Implementation Roadmap, Cost & ROI Model</h1>
+  <div class="subtitle">30-Day Phased Production Rollout, Infrastructure Cost Breakdown, Staffing Matrix & Commercial ROI</div>
+  <div class="meta-grid">
+    <div><strong>Document ID:</strong> DOC-AECDI-ROI-04</div>
+    <div><strong>Revision:</strong> Rev 1.0 (Final)</div>
+    <div><strong>Author:</strong> Sahil Navadiya (Process Lead)</div>
+    <div><strong>Target:</strong> Uppteam / ISP Global Consulting</div>
+  </div>
+</div>
+
+<h2>1. Executive Summary & Strategic Business Context</h2>
+<p>In commercial Architectural Offshore Production (AOP), manual Quality Control represents 20% to 35% of total engineering hours. This document outlines the 30-day rollout plan, 90-day scaling model, compute cost budget, and financial ROI framework for Uppteam.</p>
+
+<div class="callout success">
+  <strong>Key Strategic Metrics:</strong><br>
+  • <strong>30-Day Rollout:</strong> 4 weekly sprints from shadow-baselining to executive sign-off.<br>
+  • <strong>QC Hours Saved:</strong> 40%–50% reduction in review cycle duration.<br>
+  • <strong>Lean Infrastructure:</strong> $175/month cloud cost ($3.50/set) for 50 commercial sets/month.<br>
+  • <strong>Internal Margin Gain:</strong> $71,280/year at target scale (50 sets/month).<br>
+  • <strong>Commercial Revenue:</strong> $108,000/year new recurring revenue via external 'Second Eye' service.
+</div>
+
+<h2>2. 30-Day Phased Implementation Roadmap</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Sprint</th>
+      <th>Focus & Activities</th>
+      <th>Key Deliverables</th>
+      <th>Exit Criteria</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Week 1</strong></td>
+      <td>Shadow QC pods across 3 projects; baseline hours; finalize Zero Data Retention accord.</td>
+      <td>Baseline QC metrics sheet; Security accord; CAD template index.</td>
+      <td>Hours signed off; Security approved.</td>
+    </tr>
+    <tr>
+      <td><strong>Week 2</strong></td>
+      <td>Calibrate title blocks for top 5 client CAD standards; benchmark 10 historical sets.</td>
+      <td>Custom CAD rules; historical eval report; precision/recall benchmark.</td>
+      <td>Recall &ge; 85% on historical data; 0 parser crashes.</td>
+    </tr>
+    <tr>
+      <td><strong>Week 3</strong></td>
+      <td>Deploy review UI & folder watchers; shadow-pilot on 2 live projects alongside QC engineers.</td>
+      <td>Interactive review portal; Bluebeam & Excel export pipelines; shadow log.</td>
+      <td>Zero deadline impact; &ge; 80% reviewer acceptance.</td>
+    </tr>
+    <tr>
+      <td><strong>Week 4</strong></td>
+      <td>Analyze rejection rationales; tune confidence thresholds; conduct team training workshop.</td>
+      <td>Calibrated pipeline; Engineer SOP; Executive sign-off report.</td>
+      <td>Formal Go/No-Go sign-off; &ge; 35% QC time savings.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>3. 90-Day Scaling & Commercialization Roadmap</h2>
+<ul>
+  <li><strong>Phase 2 (Days 31–60): Enterprise Rollout:</strong> Expand platform to 100% of internal AOP drafting teams. Direct integration with Autodesk Construction Cloud (ACC) Issues API and automated BCF issue sync.</li>
+  <li><strong>Phase 3 (Days 61–90): Commercial Launch:</strong> Productize as an external <em>"Second Eye" AI QA/QC Service</em> for U.S. and Canadian architectural firms at $450/set (24-hour turnaround, 80%+ gross margin).</li>
+</ul>
+
+<h2>4. Comprehensive Infrastructure & Compute Cost Model</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Infrastructure Component</th>
+      <th>Technical Specification</th>
+      <th>Monthly Cost</th>
+      <th>Cost / Set (50 Sets)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>API & Extraction Compute</strong></td>
+      <td>AWS t4g.xlarge / Hetzner CPX41 (4 vCPU, 16GB RAM)</td>
+      <td>$48.00</td>
+      <td>$0.96</td>
+    </tr>
+    <tr>
+      <td><strong>Database & Vector Storage</strong></td>
+      <td>Managed PostgreSQL (pgvector) + SQLite cache</td>
+      <td>$35.00</td>
+      <td>$0.70</td>
+    </tr>
+    <tr>
+      <td><strong>Object Storage</strong></td>
+      <td>AWS S3 / Cloudflare R2 (100 GB storage + egress)</td>
+      <td>$12.00</td>
+      <td>$0.24</td>
+    </tr>
+    <tr>
+      <td><strong>Workflow Automation</strong></td>
+      <td>Self-hosted n8n instance (folder watchers, triggers)</td>
+      <td>$20.00</td>
+      <td>$0.40</td>
+    </tr>
+    <tr>
+      <td><strong>LLM Semantic API Tokens</strong></td>
+      <td>Claude 3.5 Sonnet / GPT-4o with Zero Data Retention</td>
+      <td>$45.00</td>
+      <td>$0.90</td>
+    </tr>
+    <tr>
+      <td><strong>CI / Automated Eval</strong></td>
+      <td>GitHub Actions regression test runners</td>
+      <td>$15.00</td>
+      <td>$0.30</td>
+    </tr>
+    <tr>
+      <td><strong>Total Cloud Profile</strong></td>
+      <td><strong>Fully Managed Enterprise Cloud Setup</strong></td>
+      <td><strong>$175.00 / mo</strong></td>
+      <td><strong>$3.50 / set</strong></td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>5. Engineering Resource Allocation & Staffing Matrix</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Team Role</th>
+      <th>Month 1 Allocation</th>
+      <th>Steady State</th>
+      <th>Primary Responsibilities</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>AI Process Lead (Sahil Navadiya)</strong></td>
+      <td>50%</td>
+      <td>20%</td>
+      <td>Architecture governance, prompt tuning, client integration, ROI reporting.</td>
+    </tr>
+    <tr>
+      <td><strong>Full-Stack Python Engineer</strong></td>
+      <td>100%</td>
+      <td>30%</td>
+      <td>Ingestion pipeline, APS API integration, database schema, review UI.</td>
+    </tr>
+    <tr>
+      <td><strong>Senior AEC QC Specialist</strong></td>
+      <td>25%</td>
+      <td>15%</td>
+      <td>Ground-truth annotation, shadow-pilot verification, training workshops.</td>
+    </tr>
+    <tr>
+      <td><strong>IT & Security Administrator</strong></td>
+      <td>10% (Week 1)</td>
+      <td>On-demand</td>
+      <td>Zero Data Retention sign-off, network provisioning, SSO integration.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2>6. Financial ROI & Margin Expansion Modeling</h2>
+<h3>Internal Drafting QC Cost Reduction</h3>
+<table>
+  <thead>
+    <tr>
+      <th>Adoption Scenario</th>
+      <th>Drawing Sets / Mo</th>
+      <th>Monthly Hours Saved</th>
+      <th>Monthly Savings ($22/hr)</th>
+      <th>Annual Savings</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Conservative (25% reduction)</strong></td>
+      <td>20 sets</td>
+      <td>60 hours</td>
+      <td>$1,320 / mo</td>
+      <td>$15,840 / year</td>
+    </tr>
+    <tr>
+      <td><strong>Base Case (40% reduction)</strong></td>
+      <td>35 sets</td>
+      <td>168 hours</td>
+      <td>$3,696 / mo</td>
+      <td>$44,352 / year</td>
+    </tr>
+    <tr>
+      <td><strong>Target Scale (45% reduction)</strong></td>
+      <td>50 sets</td>
+      <td>270 hours</td>
+      <td>$5,940 / mo</td>
+      <td>$71,280 / year</td>
+    </tr>
+    <tr>
+      <td><strong>Optimistic (50% reduction)</strong></td>
+      <td>70 sets</td>
+      <td>420 hours</td>
+      <td>$9,240 / mo</td>
+      <td>$110,880 / year</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="callout info">
+  <strong>External Commercial Upside ("Second Eye" Service):</strong><br>
+  Marketed at $450/set to North American firms. Delivery cost: ~$88 (3 hrs offshore review + $3.50 compute).<br>
+  • <strong>Gross Margin:</strong> 80.4% ($362 gross profit per set).<br>
+  • <strong>At 25 sets/month:</strong> $11,250/mo revenue = <strong>$108,600 annual net contribution</strong>.
+</div>
+
+<h2>7. Risk Assessment & Operational Mitigation</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Risk Item</th>
+      <th>Impact</th>
+      <th>Probability</th>
+      <th>Proactive Mitigation Strategy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><strong>Drawing Style Variability</strong></td>
+      <td>Medium</td>
+      <td>Medium</td>
+      <td>Automated title block discovery with manual UI crop override fallback.</td>
+    </tr>
+    <tr>
+      <td><strong>Client NDA & Data Privacy</strong></td>
+      <td>High</td>
+      <td>Low</td>
+      <td>Enterprise Zero Data Retention agreements; on-premise air-gapped Llama-3 option.</td>
+    </tr>
+    <tr>
+      <td><strong>QC Engineer Adoption Friction</strong></td>
+      <td>Medium</td>
+      <td>Medium</td>
+      <td>Shadowing in Week 1; positioning tool as an assistant with human sign-off.</td>
+    </tr>
+    <tr>
+      <td><strong>False Sense of Security</strong></td>
+      <td>High</td>
+      <td>Low</td>
+      <td>Watermark all outputs as 'Potential Discrepancies - Requires EOR Verification'.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="footer">
+  <div>CONFIDENTIAL &bull; Uppteam / ISP Global Consulting Pvt. Ltd.</div>
+  <div>Deliverable 04: Implementation Roadmap, Infrastructure Cost & ROI Analysis</div>
+</div>
+
+</body>
+</html>
