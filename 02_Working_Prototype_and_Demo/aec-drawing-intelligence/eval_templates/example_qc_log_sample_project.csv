@@ -1,0 +1,30 @@
+issue_id,sheets,category,severity,description,covered
+QC-001,A-101; A-601,,medium,Door tag 121 on A-101 has no row in the door schedule.,yes
+QC-002,A-601; A-101,,low,Door schedule row 122 does not appear on any plan.,yes
+QC-003,A-101,,medium,Door tag 107 appears twice on A-101; door 108 is tagged 107.,yes
+QC-004,A-601,,medium,Door 102: HDW SET is blank in the door schedule.,yes
+QC-005,A-601,,medium,"Door 105 references hardware set HW-9, not defined in 08 71 00.",yes
+QC-006,A-601,,high,Door 104 is type D1 / spec 08 14 16 (flush wood) but scheduled material is HM.,yes
+QC-007,A-601,,high,"Wood door 101 scheduled 90 MIN; 08 14 16 allows 20, 45 and 60 minute wood doors.",yes
+QC-008,A-601,,medium,Section 08 41 13 is referenced by the door schedule and BOQ but is not in the project manual.,yes
+QC-009,A-101; G-001,,medium,A-101 references detail 3/A-501; A-501 is listed in the index but is not in the set.,yes
+QC-010,G-001; S-101,,low,S-101 is in the set but missing from the G-001 sheet index.,yes
+QC-011,A-101,,high,"A-101: bay 1-2 labelled 24'-6""; chain no longer sums to overall dimension.",yes
+QC-012,S-101; A-101,,high,"Grid 2-3: A-101 = 30'-0"", S-101 = 32'-0"".",yes
+QC-013,M-101; M-601,,medium,Equipment tag EF-4 on M-101 is not in the M-601 schedule.,yes
+QC-014,M-601; E-601,,high,"RTU-2: M-601 says 460/3, E-601 feeds it from a 208/3 circuit.",yes
+QC-015,M-601; E-601,,high,EF-1 needs 120/1 power (M-601) but has no circuit on E-601.,yes
+QC-016,M-601; E-601,,high,RTU-3: breaker 15 A on E-601 is below MCA 30 A on M-601.,yes
+QC-017,M-601; S-101,,high,RTU-1: M-601 weight 2450 LB exceeds S-101 design max 2000 LB.,yes
+QC-018,M-601,,high,RTU-1 remarks R-410A; 23 74 13 requires R-454B.,yes
+QC-019,M-601,,medium,EF-3 is NIC (by owner) but is priced in the BOQ.,yes
+QC-020,M-601,,medium,BOQ prices 2 EA of EF-1; plan and schedule show 1.,yes
+QC-021,A-101,,medium,A-101: door swing into room 101 has no door tag (and no schedule row).,yes
+QC-022,A-601,,medium,Door 103: issued A-601 shows HW-1; the Revit model export shows HW-3.,yes
+QC-023,M-601,,medium,M-601 content changed in Rev B but its title block still shows Rev A.,yes
+QC-024,A-601,,high,"A-601 door 110 width changed 3'-0"" -> 3'-6"" in Rev B without a revision cloud.",yes
+QC-025,A-601,,high,Door 108A (D1) added in Rev B; BOQ D1 quantity not updated.,yes
+QC-026,A-601,,high,BOQ door type D2 quantity 2 does not match the door schedule.,yes
+QC-027,A-601,,high,Client redline on A-601 (door 106: change hardware to HW-2) was not incorporated in Rev B.,yes
+QC-901,A-101,,medium,Toilet 107 door clearance does not meet accessibility maneuvering space,no
+QC-902,A-101,,low,Wall type tags missing along corridor partitions,no

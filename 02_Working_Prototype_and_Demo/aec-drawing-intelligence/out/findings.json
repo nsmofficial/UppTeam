@@ -1,0 +1,2324 @@
+{
+  "project": "sample_project",
+  "findings": [
+    {
+      "id": "F-001",
+      "type": "cross_discipline_conflict",
+      "severity": "high",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: EF-1 requires 120/1 power (M-601) but no branch circuit serves it on the panel schedules.",
+      "entities": [
+        "EQUIP:EF-1"
+      ],
+      "sheets": [
+        "M-601"
+      ],
+      "disciplines": [
+        "M"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "EF-1",
+          "role": "equipment row",
+          "sheet": "M-601",
+          "rev": "A",
+          "page": 5,
+          "bbox": [
+            40.0,
+            136.0,
+            90.0,
+            150.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "120/1",
+          "role": "required power",
+          "sheet": "M-601",
+          "rev": "A",
+          "page": 5,
+          "bbox": [
+            314.0,
+            136.0,
+            358.0,
+            150.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:XD-002",
+      "confidence": 0.9,
+      "rationale": "Checked against every panel schedule in the set.",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-002",
+      "type": "cross_discipline_conflict",
+      "severity": "high",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: RTU-1 operating weight 2,450 LB (M-601) exceeds the 2,000 LB design weight on S-101.",
+      "entities": [
+        "EQUIP:RTU-1"
+      ],
+      "sheets": [
+        "M-601",
+        "S-101"
+      ],
+      "disciplines": [
+        "M",
+        "S"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "2,450",
+          "role": "equipment weight",
+          "sheet": "M-601",
+          "rev": "A",
+          "page": 5,
+          "bbox": [
+            406.0,
+            94.0,
+            468.0,
+            108.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "RTU-1: DESIGN MAX OPERATING WEIGHT 2,000 LB",
+          "role": "structural design weight",
+          "sheet": "S-101",
+          "rev": "A",
+          "page": 3,
+          "bbox": [
+            256.48,
+            294.8,
+            403.52,
+            303.04
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:XD-004",
+      "confidence": 0.95,
+      "rationale": "",
+      "min_evidence": 2,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-003",
+      "type": "cross_discipline_conflict",
+      "severity": "high",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: RTU-2 is scheduled 460/3 on M-601 but is fed 208/3 from panel LA ckt 7,9,11 on E-601.",
+      "entities": [
+        "EQUIP:RTU-2"
+      ],
+      "sheets": [
+        "E-601",
+        "M-601"
+      ],
+      "disciplines": [
+        "E",
+        "M"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "460/3",
+          "role": "mechanical V/PH",
+          "sheet": "M-601",
+          "rev": "A",
+          "page": 5,
+          "bbox": [
+            314.0,
+            108.0,
+            358.0,
+            122.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "208/3",
+          "role": "electrical V/PH",
+          "sheet": "E-601",
+          "rev": "A",
+          "page": 6,
+          "bbox": [
+            314.0,
+            150.0,
+            364.0,
+            164.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "RTU-2",
+          "role": "panel load",
+          "sheet": "E-601",
+          "rev": "A",
+          "page": 6,
+          "bbox": [
+            144.0,
+            150.0,
+            314.0,
+            164.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:XD-001",
+      "confidence": 0.95,
+      "rationale": "",
+      "min_evidence": 2,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-004",
+      "type": "cross_discipline_conflict",
+      "severity": "high",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: RTU-3 MCA 30 A (M-601) exceeds the 15 A breaker on panel HA ckt 13,15,17 (E-601).",
+      "entities": [
+        "EQUIP:RTU-3"
+      ],
+      "sheets": [
+        "E-601",
+        "M-601"
+      ],
+      "disciplines": [
+        "E",
+        "M"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "30",
+          "role": "MCA",
+          "sheet": "M-601",
+          "rev": "A",
+          "page": 5,
+          "bbox": [
+            358.0,
+            122.0,
+            406.0,
+            136.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "15",
+          "role": "breaker",
+          "sheet": "E-601",
+          "rev": "A",
+          "page": 6,
+          "bbox": [
+            408.0,
+            108.0,
+            458.0,
+            122.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "RTU-3",
+          "role": "panel load",
+          "sheet": "E-601",
+          "rev": "A",
+          "page": 6,
+          "bbox": [
+            144.0,
+            108.0,
+            314.0,
+            122.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:XD-003",
+      "confidence": 0.95,
+      "rationale": "",
+      "min_evidence": 2,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-005",
+      "type": "dimension_conflict",
+      "severity": "high",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: grid 1-2 is dimensioned differently across sheets: A-101 = 24'-6\"; S-101 = 25'-0\".",
+      "entities": [
+        "GRID:1-2"
+      ],
+      "sheets": [
+        "A-101",
+        "S-101"
+      ],
+      "disciplines": [
+        "A",
+        "S"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "24'-6\"",
+          "role": "grid dimension",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            253.59,
+            131.48,
+            271.41,
+            141.09
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "25'-0\"",
+          "role": "grid dimension",
+          "sheet": "S-101",
+          "rev": "A",
+          "page": 3,
+          "bbox": [
+            253.59,
+            131.48,
+            271.41,
+            141.09
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:DIM-003",
+      "confidence": 0.95,
+      "rationale": "",
+      "min_evidence": 2,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-006",
+      "type": "dimension_conflict",
+      "severity": "high",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy on A-101: chained dimensions 24'-6\" + 30'-0\" + 25'-0\" = 79'-6\", but the overall dimension (grid 1-4) reads 80'-0\".",
+      "entities": [
+        "GRID:1-4"
+      ],
+      "sheets": [
+        "A-101"
+      ],
+      "disciplines": [
+        "A"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "80'-0\"",
+          "role": "overall dimension",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            501.09,
+            111.47,
+            518.91,
+            121.09
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "24'-6\"",
+          "role": "chain dimension",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            253.59,
+            131.48,
+            271.41,
+            141.09
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "30'-0\"",
+          "role": "chain dimension",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            501.09,
+            131.48,
+            518.91,
+            141.09
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "25'-0\"",
+          "role": "chain dimension",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            748.59,
+            131.48,
+            766.41,
+            141.09
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:DIM-001",
+      "confidence": 0.97,
+      "rationale": "",
+      "min_evidence": 2,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-007",
+      "type": "dimension_conflict",
+      "severity": "high",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy on S-101: chained dimensions 25'-0\" + 32'-0\" + 25'-0\" = 82'-0\", but the overall dimension (grid 1-4) reads 80'-0\".",
+      "entities": [
+        "GRID:1-4"
+      ],
+      "sheets": [
+        "S-101"
+      ],
+      "disciplines": [
+        "S"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "80'-0\"",
+          "role": "overall dimension",
+          "sheet": "S-101",
+          "rev": "A",
+          "page": 3,
+          "bbox": [
+            501.09,
+            111.47,
+            518.91,
+            121.09
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "25'-0\"",
+          "role": "chain dimension",
+          "sheet": "S-101",
+          "rev": "A",
+          "page": 3,
+          "bbox": [
+            253.59,
+            131.48,
+            271.41,
+            141.09
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "32'-0\"",
+          "role": "chain dimension",
+          "sheet": "S-101",
+          "rev": "A",
+          "page": 3,
+          "bbox": [
+            501.09,
+            131.48,
+            518.91,
+            141.09
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "25'-0\"",
+          "role": "chain dimension",
+          "sheet": "S-101",
+          "rev": "A",
+          "page": 3,
+          "bbox": [
+            748.59,
+            131.48,
+            766.41,
+            141.09
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:DIM-001",
+      "confidence": 0.97,
+      "rationale": "",
+      "min_evidence": 2,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-008",
+      "type": "dimension_conflict",
+      "severity": "high",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: grid 2-3 is dimensioned differently across sheets: A-101 = 30'-0\"; S-101 = 32'-0\".",
+      "entities": [
+        "GRID:2-3"
+      ],
+      "sheets": [
+        "A-101",
+        "S-101"
+      ],
+      "disciplines": [
+        "A",
+        "S"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "30'-0\"",
+          "role": "grid dimension",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            501.09,
+            131.48,
+            518.91,
+            141.09
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "32'-0\"",
+          "role": "grid dimension",
+          "sheet": "S-101",
+          "rev": "A",
+          "page": 3,
+          "bbox": [
+            501.09,
+            131.48,
+            518.91,
+            141.09
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:DIM-003",
+      "confidence": 0.95,
+      "rationale": "",
+      "min_evidence": 2,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-009",
+      "type": "quantity_mismatch",
+      "severity": "high",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: door type D1: 9 door(s) in the schedule (101, 102, 103, 104, 105, 106, 108A, 110, 122); BOQ 08-100 = 8 EA.",
+      "entities": [
+        "BOQ:08-100",
+        "DOORTYPE:D1"
+      ],
+      "sheets": [
+        "A-601",
+        "BOQ"
+      ],
+      "disciplines": [
+        "A"
+      ],
+      "evidence": [
+        {
+          "doc": "BOQ_RevB.xlsx",
+          "snippet": "8",
+          "role": "BOQ quantity",
+          "sheet": null,
+          "rev": null,
+          "page": null,
+          "bbox": null,
+          "xlsx_sheet": "BOQ",
+          "row": 6,
+          "cell": "E6",
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "D1",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            84.0,
+            94.0,
+            122.0,
+            108.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "D1",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            84.0,
+            276.0,
+            122.0,
+            290.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:QTY-001",
+      "confidence": 0.95,
+      "rationale": "Counts schedule rows per door type; plan-vs-schedule differences are reported separately as undefined/orphan tags.",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-010",
+      "type": "quantity_mismatch",
+      "severity": "high",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: door type D2: 3 door(s) in the schedule (107, 108, 109); BOQ 08-110 = 2 EA.",
+      "entities": [
+        "BOQ:08-110",
+        "DOORTYPE:D2"
+      ],
+      "sheets": [
+        "A-601",
+        "BOQ"
+      ],
+      "disciplines": [
+        "A"
+      ],
+      "evidence": [
+        {
+          "doc": "BOQ_RevB.xlsx",
+          "snippet": "2",
+          "role": "BOQ quantity",
+          "sheet": null,
+          "rev": null,
+          "page": null,
+          "bbox": null,
+          "xlsx_sheet": "BOQ",
+          "row": 7,
+          "cell": "E7",
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "D2",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            84.0,
+            178.0,
+            122.0,
+            192.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "D2",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            84.0,
+            220.0,
+            122.0,
+            234.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:QTY-001",
+      "confidence": 0.95,
+      "rationale": "Counts schedule rows per door type; plan-vs-schedule differences are reported separately as undefined/orphan tags.",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-011",
+      "type": "quantity_mismatch",
+      "severity": "high",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: EF-1: schedule M-601 QTY = 1, BOQ 23-130 = 2 EA.",
+      "entities": [
+        "BOQ:23-130",
+        "EQUIP:EF-1"
+      ],
+      "sheets": [
+        "BOQ",
+        "M-601"
+      ],
+      "disciplines": [
+        "M"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "1",
+          "role": "schedule quantity",
+          "sheet": "M-601",
+          "rev": "A",
+          "page": 5,
+          "bbox": [
+            220.0,
+            136.0,
+            252.0,
+            150.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "BOQ_RevB.xlsx",
+          "snippet": "2",
+          "role": "BOQ quantity",
+          "sheet": null,
+          "rev": null,
+          "page": null,
+          "bbox": null,
+          "xlsx_sheet": "BOQ",
+          "row": 14,
+          "cell": "E14",
+          "verified": true
+        }
+      ],
+      "method": "rule:QTY-002",
+      "confidence": 0.95,
+      "rationale": "",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-012",
+      "type": "revision_issue",
+      "severity": "high",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: A-601 changed between Rev A and Rev B without a revision cloud: '3'-0\"' -> '3'-6\"' (WIDTH).",
+      "entities": [
+        "DOOR:110"
+      ],
+      "sheets": [
+        "A-601"
+      ],
+      "disciplines": [
+        "A"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "3'-6\"",
+          "role": "Rev B content",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            122.0,
+            234.0,
+            170.0,
+            248.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevA.pdf",
+          "snippet": "3'-0\"",
+          "role": "Rev A content",
+          "sheet": "A-601",
+          "rev": "A",
+          "page": 2,
+          "bbox": [
+            122.0,
+            220.0,
+            170.0,
+            234.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:REV-001",
+      "confidence": 0.95,
+      "rationale": "Unclouded changes are easy to miss in bid/addendum review; confirm the change is intended and cloud it, or revert it.",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-013",
+      "type": "spec_conflict",
+      "severity": "high",
+      "tier": "probable",
+      "statement": "Potential discrepancy: door 101 is scheduled 90 MIN but Section 08 14 16 permits 20, 45, 60 minute ratings for this door type.",
+      "entities": [
+        "DOOR:101"
+      ],
+      "sheets": [
+        "A-601"
+      ],
+      "disciplines": [
+        "A"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "90 MIN",
+          "role": "schedule fire rating",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            322.0,
+            94.0,
+            386.0,
+            108.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "Project_Manual.pdf",
+          "snippet": "rated 20, 45 and 60 minutes",
+          "role": "spec permitted ratings",
+          "sheet": "08 14 16",
+          "rev": null,
+          "page": 1,
+          "bbox": [
+            240.06,
+            246.32,
+            352.12,
+            258.69
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "Project_Manual.pdf",
+          "snippet": "Wood doors rated more than 60 minutes are not permitted; use hollow metal doors.",
+          "role": "spec restriction",
+          "sheet": "08 14 16",
+          "rev": null,
+          "page": 1,
+          "bbox": [
+            90.0,
+            246.32,
+            517.19,
+            270.69
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:SPEC-002",
+      "confidence": 0.85,
+      "rationale": "",
+      "min_evidence": 2,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-014",
+      "type": "spec_conflict",
+      "severity": "high",
+      "tier": "probable",
+      "statement": "Potential discrepancy: door 104 is governed by Section 08 14 16 (FLUSH WOOD DOORS) but its scheduled material is HM.",
+      "entities": [
+        "DOOR:104"
+      ],
+      "sheets": [
+        "A-601"
+      ],
+      "disciplines": [
+        "A"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "HM",
+          "role": "schedule material",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            218.0,
+            136.0,
+            276.0,
+            150.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "08 14 16",
+          "role": "schedule spec ref",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            440.0,
+            136.0,
+            510.0,
+            150.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "Project_Manual.pdf",
+          "snippet": "solid core flush wood doors, 1-3/4 inches thick, WDMA I.S.1A Extra Heavy Duty",
+          "role": "governing spec paragraph",
+          "sheet": "08 14 16",
+          "rev": null,
+          "page": 1,
+          "bbox": [
+            119.01,
+            214.32,
+            436.12,
+            226.69
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:SPEC-001",
+      "confidence": 0.85,
+      "rationale": "Material implied by the governing section title.",
+      "min_evidence": 2,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-015",
+      "type": "spec_conflict",
+      "severity": "high",
+      "tier": "probable",
+      "statement": "Potential discrepancy: RTU-1 remarks list refrigerant R-410A; Section 23 74 13 requires R-454B.",
+      "entities": [
+        "EQUIP:RTU-1"
+      ],
+      "sheets": [
+        "M-601"
+      ],
+      "disciplines": [
+        "M"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "R-410A, ECONOMIZER",
+          "role": "schedule remarks",
+          "sheet": "M-601",
+          "rev": "A",
+          "page": 5,
+          "bbox": [
+            524.0,
+            94.0,
+            674.0,
+            108.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "Project_Manual.pdf",
+          "snippet": "Refrigerant: R-454B",
+          "role": "spec requirement",
+          "sheet": "23 74 13",
+          "rev": null,
+          "page": 5,
+          "bbox": [
+            90.0,
+            178.32,
+            170.03,
+            190.69
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:SPEC-003",
+      "confidence": 0.85,
+      "rationale": "",
+      "min_evidence": 2,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-016",
+      "type": "missing_info",
+      "severity": "medium",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: door 102 on A-601 has no value for HDW SET (non-rated / not applicable is shown as '-', blank means missing).",
+      "entities": [
+        "DOOR:102"
+      ],
+      "sheets": [
+        "A-601"
+      ],
+      "disciplines": [
+        "A"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "102",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            40.0,
+            108.0,
+            84.0,
+            122.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "",
+          "role": "blank HDW SET",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            386.0,
+            108.0,
+            440.0,
+            122.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:MISS-003",
+      "confidence": 0.95,
+      "rationale": "",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-017",
+      "type": "missing_info",
+      "severity": "medium",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: door 105 calls for hardware set HW-9, which is not defined in Section 08 71 00 (defined: HW-1, HW-2, HW-3, HW-4).",
+      "entities": [
+        "DOOR:105",
+        "HW:HW-9"
+      ],
+      "sheets": [
+        "A-601"
+      ],
+      "disciplines": [
+        "A"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "HW-9",
+          "role": "schedule hardware set",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            386.0,
+            150.0,
+            440.0,
+            164.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "Project_Manual.pdf",
+          "snippet": "SECTION 08 71 00",
+          "role": "spec section",
+          "sheet": "08 71 00",
+          "rev": null,
+          "page": 2,
+          "bbox": [
+            54.0,
+            78.22999572753906,
+            148.76498413085938,
+            93.37699890136719
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:MISS-004",
+      "confidence": 0.95,
+      "rationale": "",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-018",
+      "type": "missing_info",
+      "severity": "medium",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: door tag 121 on A-101 has no row in the door schedule (A-601).",
+      "entities": [
+        "DOOR:121"
+      ],
+      "sheets": [
+        "A-101"
+      ],
+      "disciplines": [
+        "A"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "121",
+          "role": "plan tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            535.66,
+            402.58,
+            547.34,
+            412.19
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:MISS-001",
+      "confidence": 0.95,
+      "rationale": "Every door tag on a plan should resolve to exactly one schedule row.",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-019",
+      "type": "missing_info",
+      "severity": "medium",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: equipment tag EF-4 on M-101 is not in the equipment schedule (M-601).",
+      "entities": [
+        "EQUIP:EF-4"
+      ],
+      "sheets": [
+        "M-101"
+      ],
+      "disciplines": [
+        "M"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "EF-4",
+          "role": "plan tag",
+          "sheet": "M-101",
+          "rev": "A",
+          "page": 4,
+          "bbox": [
+            538.96,
+            537.51,
+            553.04,
+            546.44
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:MISS-009",
+      "confidence": 0.95,
+      "rationale": "",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-020",
+      "type": "missing_info",
+      "severity": "medium",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: sheet A-501 is referenced/listed but is not included in the drawing set.",
+      "entities": [
+        "SHEET:A-501"
+      ],
+      "sheets": [
+        "A-101",
+        "G-001"
+      ],
+      "disciplines": [
+        "A",
+        "G"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "A-501",
+          "role": "sheet reference",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            252.0,
+            664.55,
+            268.0,
+            672.79
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "A-501",
+          "role": "sheet index",
+          "sheet": "G-001",
+          "rev": "A",
+          "page": 0,
+          "bbox": [
+            60.0,
+            238.0,
+            130.0,
+            254.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:MISS-006",
+      "confidence": 0.95,
+      "rationale": "",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-021",
+      "type": "missing_info",
+      "severity": "medium",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: Section 08 41 13 is referenced 4 time(s) (schedules / BOQ / notes) but is not included in the project manual.",
+      "entities": [
+        "SPEC:08 41 13"
+      ],
+      "sheets": [
+        "A-601",
+        "BOQ"
+      ],
+      "disciplines": [
+        "A"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "08 41 13",
+          "role": "door schedule",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            440.0,
+            248.0,
+            510.0,
+            262.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "08 41 13",
+          "role": "door schedule",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            440.0,
+            262.0,
+            510.0,
+            276.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "SEE SECTION 08 41 13",
+          "role": "drawing note",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            380.0,
+            475.55,
+            445.36,
+            483.79
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "BOQ_RevB.xlsx",
+          "snippet": "08 41 13",
+          "role": "BOQ line",
+          "sheet": null,
+          "rev": null,
+          "page": null,
+          "bbox": null,
+          "xlsx_sheet": "BOQ",
+          "row": 8,
+          "cell": "C8",
+          "verified": true
+        }
+      ],
+      "method": "rule:MISS-005",
+      "confidence": 0.95,
+      "rationale": "",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-022",
+      "type": "model_mismatch",
+      "severity": "medium",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: door 103 on A-601 differs from the model export: HDW SET: sheet 'HW-1' vs model 'HW-3'.",
+      "entities": [
+        "DOOR:103"
+      ],
+      "sheets": [
+        "A-601"
+      ],
+      "disciplines": [
+        "A"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "HW-1",
+          "role": "issued schedule value",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            386.0,
+            122.0,
+            440.0,
+            136.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "Revit_Door_Schedule_Export.txt",
+          "snippet": "HW-3",
+          "role": "model export (Revit)",
+          "sheet": null,
+          "rev": null,
+          "page": null,
+          "bbox": null,
+          "xlsx_sheet": null,
+          "row": 6,
+          "cell": "Hardware Set",
+          "verified": true
+        }
+      ],
+      "method": "rule:NATIVE-001",
+      "confidence": 0.95,
+      "rationale": "Sheet issued from an older model state, or a value overridden on the sheet.",
+      "min_evidence": 2,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-023",
+      "type": "quantity_mismatch",
+      "severity": "medium",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: EF-3 is marked NIC (not in contract) but BOQ 23-150 prices 1 EA.",
+      "entities": [
+        "BOQ:23-150",
+        "EQUIP:EF-3"
+      ],
+      "sheets": [
+        "BOQ",
+        "M-101",
+        "M-601"
+      ],
+      "disciplines": [
+        "M"
+      ],
+      "evidence": [
+        {
+          "doc": "BOQ_RevB.xlsx",
+          "snippet": "1",
+          "role": "BOQ quantity",
+          "sheet": null,
+          "rev": null,
+          "page": null,
+          "bbox": null,
+          "xlsx_sheet": "BOQ",
+          "row": 16,
+          "cell": "E16",
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "NIC - BY OWNER",
+          "role": "schedule remarks",
+          "sheet": "M-601",
+          "rev": "A",
+          "page": 5,
+          "bbox": [
+            524.0,
+            164.0,
+            674.0,
+            178.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "(NIC)",
+          "role": "plan NIC note",
+          "sheet": "M-101",
+          "rev": "A",
+          "page": 4,
+          "bbox": [
+            819.0,
+            538.05,
+            833.33,
+            546.29
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:QTY-003",
+      "confidence": 0.95,
+      "rationale": "",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-024",
+      "type": "revision_issue",
+      "severity": "medium",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: M-601 content changed (1 change(s)) but its title block still shows Rev A; the revision was not issued on this sheet.",
+      "entities": [
+        "SHEET:M-601"
+      ],
+      "sheets": [
+        "M-601"
+      ],
+      "disciplines": [
+        "M"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "A",
+          "role": "latest revision in title block",
+          "sheet": "M-601",
+          "rev": "A",
+          "page": 5,
+          "bbox": [
+            1050.0,
+            139.01,
+            1054.34,
+            147.94
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "12.5 TON",
+          "role": "changed content",
+          "sheet": "M-601",
+          "rev": "A",
+          "page": 5,
+          "bbox": [
+            252.0,
+            94.0,
+            314.0,
+            108.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:REV-002",
+      "confidence": 0.9,
+      "rationale": "",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-025",
+      "type": "tag_conflict",
+      "severity": "medium",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: door number 107 is tagged 2 times on the plans; door numbers must be unique.",
+      "entities": [
+        "DOOR:107"
+      ],
+      "sheets": [
+        "A-101"
+      ],
+      "disciplines": [
+        "A"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "107",
+          "role": "plan tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            445.66,
+            402.58,
+            457.34,
+            412.19
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "107",
+          "role": "plan tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            562.66,
+            402.58,
+            574.34,
+            412.19
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:TAG-001",
+      "confidence": 0.95,
+      "rationale": "",
+      "min_evidence": 2,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-026",
+      "type": "dimension_conflict",
+      "severity": "medium",
+      "tier": "probable",
+      "statement": "Potential discrepancy on A-101: dimension text 24'-6\" (grid 1-2) but the drawn length measures about 25'-0\" at 1/8\" = 1'-0\". Possible overridden dimension.",
+      "entities": [
+        "GRID:1-2"
+      ],
+      "sheets": [
+        "A-101"
+      ],
+      "disciplines": [
+        "A"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "24'-6\"",
+          "role": "dimension text",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            253.59,
+            131.48,
+            271.41,
+            141.09
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:DIM-002",
+      "confidence": 0.75,
+      "rationale": "Probable only: drawings say DO NOT SCALE and some views are not to scale; the text may be right and the graphics wrong, or vice versa.",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-027",
+      "type": "dimension_conflict",
+      "severity": "medium",
+      "tier": "probable",
+      "statement": "Potential discrepancy on S-101: dimension text 32'-0\" (grid 2-3) but the drawn length measures about 30'-0\" at 1/8\" = 1'-0\". Possible overridden dimension.",
+      "entities": [
+        "GRID:2-3"
+      ],
+      "sheets": [
+        "S-101"
+      ],
+      "disciplines": [
+        "S"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "32'-0\"",
+          "role": "dimension text",
+          "sheet": "S-101",
+          "rev": "A",
+          "page": 3,
+          "bbox": [
+            501.09,
+            131.48,
+            518.91,
+            141.09
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:DIM-002",
+      "confidence": 0.75,
+      "rationale": "Probable only: drawings say DO NOT SCALE and some views are not to scale; the text may be right and the graphics wrong, or vice versa.",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-028",
+      "type": "missing_info",
+      "severity": "medium",
+      "tier": "probable",
+      "statement": "Potential discrepancy on A-101: a door swing at about (312, 354) has no door tag, so the door cannot be matched to the door schedule.",
+      "entities": [
+        "SYMBOL:A-101:312,354"
+      ],
+      "sheets": [
+        "A-101"
+      ],
+      "disciplines": [
+        "A"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "",
+          "role": "graphic: door swing without tag",
+          "sheet": "A-101",
+          "rev": "B",
+          "page": 1,
+          "bbox": [
+            298.5,
+            341.0,
+            325.5,
+            368.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:MISS-011",
+      "confidence": 0.75,
+      "rationale": "Probable: the symbol may be a cased opening, an existing door, or a door tagged on another view.",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-029",
+      "type": "revision_issue",
+      "severity": "medium",
+      "tier": "probable",
+      "statement": "Potential discrepancy: reviewer markup on A-601 (Rev A) \"DOOR 106: CHANGE HARDWARE TO HW-2\" has no corresponding change in Rev B at row 106, HDW SET.",
+      "entities": [
+        "DOOR:106",
+        "MARKUP:A-601:1"
+      ],
+      "sheets": [
+        "A-601"
+      ],
+      "disciplines": [
+        "A"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevA_REDLINES.pdf",
+          "snippet": "",
+          "role": "graphic: reviewer markup on previous revision",
+          "sheet": "A-601",
+          "rev": null,
+          "page": 2,
+          "bbox": [
+            377.0,
+            155.0,
+            449.0,
+            187.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "HW-1",
+          "role": "Rev B value, unchanged",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            386.0,
+            164.0,
+            440.0,
+            178.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:MARKUP-001",
+      "confidence": 0.75,
+      "rationale": "Probable: the comment may have been answered another way (RFI, other sheet, or rejected by the designer).",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-030",
+      "type": "missing_info",
+      "severity": "low",
+      "tier": "confirmed",
+      "statement": "Potential discrepancy: sheet S-101 is in the set but missing from the sheet index on G-001.",
+      "entities": [
+        "SHEET:S-101"
+      ],
+      "sheets": [
+        "G-001",
+        "S-101"
+      ],
+      "disciplines": [
+        "G",
+        "S"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "S-101",
+          "role": "title block sheet number",
+          "sheet": "S-101",
+          "rev": "A",
+          "page": 3,
+          "bbox": [
+            1048.0,
+            724.18,
+            1117.37,
+            759.98
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "E-601",
+          "role": "sheet index (last entry)",
+          "sheet": "G-001",
+          "rev": "A",
+          "page": 0,
+          "bbox": [
+            60.0,
+            301.33,
+            130.0,
+            318.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:MISS-007",
+      "confidence": 0.9,
+      "rationale": "",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-031",
+      "type": "missing_info",
+      "severity": "low",
+      "tier": "probable",
+      "statement": "Potential discrepancy: door 108 is scheduled on A-601 but is not tagged on any plan in this set.",
+      "entities": [
+        "DOOR:108"
+      ],
+      "sheets": [
+        "A-601"
+      ],
+      "disciplines": [
+        "A"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "108",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            40.0,
+            192.0,
+            84.0,
+            206.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:MISS-002",
+      "confidence": 0.85,
+      "rationale": "Probable rather than confirmed: the door may be on a plan sheet that is not part of this set.",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-032",
+      "type": "missing_info",
+      "severity": "low",
+      "tier": "probable",
+      "statement": "Potential discrepancy: door 122 is scheduled on A-601 but is not tagged on any plan in this set.",
+      "entities": [
+        "DOOR:122"
+      ],
+      "sheets": [
+        "A-601"
+      ],
+      "disciplines": [
+        "A"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "122",
+          "role": "schedule row",
+          "sheet": "A-601",
+          "rev": "B",
+          "page": 2,
+          "bbox": [
+            40.0,
+            276.0,
+            84.0,
+            290.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:MISS-002",
+      "confidence": 0.85,
+      "rationale": "Probable rather than confirmed: the door may be on a plan sheet that is not part of this set.",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    },
+    {
+      "id": "F-033",
+      "type": "quantity_mismatch",
+      "severity": "low",
+      "tier": "needs_review",
+      "statement": "Plan quantity for VAV-2 cannot be determined from the sheet: tag is marked 'TYP.' without a count. Schedule QTY = 3, BOQ = 3. Reviewer to confirm the count.",
+      "entities": [
+        "EQUIP:VAV-2"
+      ],
+      "sheets": [
+        "M-101",
+        "M-601"
+      ],
+      "disciplines": [
+        "M"
+      ],
+      "evidence": [
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "VAV-2",
+          "role": "plan tag",
+          "sheet": "M-101",
+          "rev": "A",
+          "page": 4,
+          "bbox": [
+            644.61,
+            366.51,
+            663.39,
+            375.44
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "TYP.",
+          "role": "TYP. note",
+          "sheet": "M-101",
+          "rev": "A",
+          "page": 4,
+          "bbox": [
+            675.0,
+            367.05,
+            688.34,
+            375.29
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        },
+        {
+          "doc": "CD_Set_RevB.pdf",
+          "snippet": "3",
+          "role": "schedule quantity",
+          "sheet": "M-601",
+          "rev": "A",
+          "page": 5,
+          "bbox": [
+            220.0,
+            192.0,
+            252.0,
+            206.0
+          ],
+          "xlsx_sheet": null,
+          "row": null,
+          "cell": null,
+          "verified": true
+        }
+      ],
+      "method": "rule:QTY-004",
+      "confidence": 0.5,
+      "rationale": "Abstained: 'TYP.' means the element repeats, but the sheet does not say how many times.",
+      "min_evidence": 1,
+      "status": "open",
+      "reviewer": null,
+      "review_comment": null
+    }
+  ],
+  "rejected": [],
+  "revision_changes": [
+    {
+      "sheet": "A-101",
+      "kind": "added",
+      "before": null,
+      "after": "108A",
+      "bbox": [
+        596.33,
+        402.58,
+        612.67,
+        412.19
+      ],
+      "page_b": 1,
+      "clouded": true,
+      "bbox_a": null,
+      "entities": [
+        "DOOR:108A"
+      ],
+      "column": null
+    },
+    {
+      "sheet": "A-101",
+      "kind": "graphic",
+      "before": null,
+      "after": null,
+      "bbox": [
+        590.0,
+        421.0,
+        618.0,
+        449.0
+      ],
+      "page_b": 1,
+      "clouded": true,
+      "bbox_a": null,
+      "entities": [
+        "SHEET:A-101"
+      ],
+      "column": null
+    },
+    {
+      "sheet": "A-601",
+      "kind": "added",
+      "before": null,
+      "after": "108A | D1 | 3'-0\" | 7'-0\" | WD | HM | 20 MIN | HW-1 | 08 14 16 | ",
+      "bbox": [
+        40.0,
+        206.0,
+        660.0,
+        220.0
+      ],
+      "page_b": 2,
+      "clouded": true,
+      "bbox_a": null,
+      "entities": [
+        "DOOR:108A"
+      ],
+      "column": null
+    },
+    {
+      "sheet": "A-601",
+      "kind": "changed",
+      "before": "3'-0\"",
+      "after": "3'-6\"",
+      "bbox": [
+        122.0,
+        234.0,
+        170.0,
+        248.0
+      ],
+      "page_b": 2,
+      "clouded": false,
+      "bbox_a": [
+        122.0,
+        220.0,
+        170.0,
+        234.0
+      ],
+      "entities": [
+        "DOOR:110"
+      ],
+      "column": "WIDTH"
+    },
+    {
+      "sheet": "M-601",
+      "kind": "changed",
+      "before": "10 TON",
+      "after": "12.5 TON",
+      "bbox": [
+        252.0,
+        94.0,
+        314.0,
+        108.0
+      ],
+      "page_b": 5,
+      "clouded": true,
+      "bbox_a": [
+        252.0,
+        94.0,
+        314.0,
+        108.0
+      ],
+      "entities": [
+        "EQUIP:RTU-1"
+      ],
+      "column": "CAPACITY"
+    }
+  ],
+  "markups": [
+    {
+      "sheet": "A-101",
+      "markup": 1,
+      "text": "ADD DOOR INTO ROOM 108 FROM CORRIDOR",
+      "bbox": [
+        582.0,
+        392.6,
+        627.0,
+        458.0
+      ],
+      "row": null,
+      "column": null,
+      "incorporated": true,
+      "matched_changes": [
+        "added: None -> 108A",
+        "graphic: None -> None"
+      ]
+    },
+    {
+      "sheet": "A-601",
+      "markup": 1,
+      "text": "DOOR 106: CHANGE HARDWARE TO HW-2",
+      "bbox": [
+        377.0,
+        155.0,
+        449.0,
+        187.0
+      ],
+      "row": "106",
+      "column": "HDW SET",
+      "incorporated": false,
+      "matched_changes": []
+    },
+    {
+      "sheet": "M-601",
+      "markup": 1,
+      "text": "RTU-1: REVISE CAPACITY PER LOAD CALC",
+      "bbox": [
+        243.0,
+        85.0,
+        323.0,
+        117.0
+      ],
+      "row": "RTU-1",
+      "column": "CAPACITY",
+      "incorporated": true,
+      "matched_changes": [
+        "changed: 10 TON -> 12.5 TON"
+      ]
+    }
+  ],
+  "stats": {
+    "sheets": 7,
+    "spec_sections": 6,
+    "boq_items": 12,
+    "door_tags": 14,
+    "door_rows": 14,
+    "equipment_tags": 9,
+    "equipment_rows": 8,
+    "dimensions": 14,
+    "graph_edges": 102,
+    "revision_changes": 5,
+    "markups": 3,
+    "markups_not_incorporated": 1,
+    "native_rows": 14,
+    "unreadable_pages": 0,
+    "findings": 33,
+    "needs_review": 1,
+    "rejected_by_gate": 0,
+    "anchors_checked": 73,
+    "anchors_verified": 73,
+    "seconds": 1.32,
+    "ingest_seconds": 0.68
+  }
+}

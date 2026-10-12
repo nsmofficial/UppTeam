@@ -1,0 +1,2 @@
+issue_id,sheets,category,severity,description,covered
+QC-001,A-101; A-601,,high,Example: door 105 hardware set not defined in spec 08 71 00,yes

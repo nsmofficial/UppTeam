@@ -1,0 +1,10 @@
+# Tested versions (Python 3.12 and 3.14, Windows). RUN.bat installs exactly these.
+pymupdf==1.28.2
+openpyxl==3.1.5
+numpy==2.5.3
+opencv-python-headless==5.0.0.93
+pydantic==2.14.0
+streamlit==1.65.0
+pandas==3.0.6
+anthropic==1.13.0
+pytest==9.1.1

@@ -1,0 +1,52 @@
+[
+  {
+    "sheet": "A-101",
+    "markup": 1,
+    "text": "ADD DOOR INTO ROOM 108 FROM CORRIDOR",
+    "bbox": [
+      582.0,
+      392.6,
+      627.0,
+      458.0
+    ],
+    "row": null,
+    "column": null,
+    "incorporated": true,
+    "matched_changes": [
+      "added: None -> 108A",
+      "graphic: None -> None"
+    ]
+  },
+  {
+    "sheet": "A-601",
+    "markup": 1,
+    "text": "DOOR 106: CHANGE HARDWARE TO HW-2",
+    "bbox": [
+      377.0,
+      155.0,
+      449.0,
+      187.0
+    ],
+    "row": "106",
+    "column": "HDW SET",
+    "incorporated": false,
+    "matched_changes": []
+  },
+  {
+    "sheet": "M-601",
+    "markup": 1,
+    "text": "RTU-1: REVISE CAPACITY PER LOAD CALC",
+    "bbox": [
+      243.0,
+      85.0,
+      323.0,
+      117.0
+    ],
+    "row": "RTU-1",
+    "column": "CAPACITY",
+    "incorporated": true,
+    "matched_changes": [
+      "changed: 10 TON -> 12.5 TON"
+    ]
+  }
+]

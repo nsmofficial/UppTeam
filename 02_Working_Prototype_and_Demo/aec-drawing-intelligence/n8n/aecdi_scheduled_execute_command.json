@@ -1,0 +1,78 @@
+{
+  "name": "AEC Drawing Intelligence - scheduled run (execute command)",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": { "interval": [{ "field": "minutes", "minutesInterval": 15 }] }
+      },
+      "id": "b2e1d7d3-0002-4d2f-8b20-000000000001",
+      "name": "Every 15 minutes",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [0, 0]
+    },
+    {
+      "parameters": {
+        "command": "cd /opt/aecdi && .venv/bin/python -m aecdi.cli watch /data/acc-sync --out /data/aecdi-out --once --json"
+      },
+      "id": "b2e1d7d3-0002-4d2f-8b20-000000000002",
+      "name": "Run aecdi watch",
+      "type": "n8n-nodes-base.executeCommand",
+      "typeVersion": 1,
+      "position": [240, 0]
+    },
+    {
+      "parameters": {
+        "jsCode": "const out = [];\nfor (const item of $input.all()) {\n  for (const line of (item.json.stdout || '').split('\\n')) {\n    const t = line.trim();\n    if (t.startsWith('{')) out.push({ json: JSON.parse(t) });\n  }\n}\nreturn out;"
+      },
+      "id": "b2e1d7d3-0002-4d2f-8b20-000000000003",
+      "name": "Parse run summaries",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [480, 0]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "loose" },
+          "conditions": [
+            { "id": "c1", "leftValue": "={{ $json.high }}", "rightValue": 0, "operator": { "type": "number", "operation": "gt" } },
+            { "id": "c2", "leftValue": "={{ $json.status }}", "rightValue": "error", "operator": { "type": "string", "operation": "equals" } }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "id": "b2e1d7d3-0002-4d2f-8b20-000000000004",
+      "name": "High findings or error?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [720, 0]
+    },
+    {
+      "parameters": {
+        "fromEmail": "aecdi@example.com",
+        "toEmail": "qc-lead@example.com",
+        "subject": "={{ '[AEC QC] ' + $json.project + ': ' + ($json.status === 'ok' ? $json.high + ' high-severity potential discrepancies' : 'run failed') }}",
+        "emailFormat": "text",
+        "text": "={{ 'Project: ' + $json.project + '\\nFindings: ' + $json.findings + ' (' + $json.high + ' high)\\nIssue log: ' + $json.issue_log + '\\nMarked-up set: ' + $json.review_pdf }}",
+        "options": {}
+      },
+      "id": "b2e1d7d3-0002-4d2f-8b20-000000000005",
+      "name": "Email QC lead",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [960, -80]
+    }
+  ],
+  "connections": {
+    "Every 15 minutes": { "main": [[{ "node": "Run aecdi watch", "type": "main", "index": 0 }]] },
+    "Run aecdi watch": { "main": [[{ "node": "Parse run summaries", "type": "main", "index": 0 }]] },
+    "Parse run summaries": { "main": [[{ "node": "High findings or error?", "type": "main", "index": 0 }]] },
+    "High findings or error?": { "main": [[{ "node": "Email QC lead", "type": "main", "index": 0 }], []] }
+  },
+  "settings": { "executionOrder": "v1" },
+  "meta": {
+    "aecdi_usage": "Self-hosted n8n on the same machine as the prototype. Recent n8n versions disable the Execute Command node by default; if it is disabled, use aecdi_webhook_notify.json instead. Adjust paths, e-mail addresses and SMTP credentials."
+  }
+}

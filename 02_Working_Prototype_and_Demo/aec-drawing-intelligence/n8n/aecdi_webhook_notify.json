@@ -1,0 +1,70 @@
+{
+  "name": "AEC Drawing Intelligence - notify QC lead (webhook)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "aecdi-run",
+        "responseMode": "onReceived",
+        "options": {}
+      },
+      "id": "a1f0c6c2-0001-4c1e-9a10-000000000001",
+      "name": "aecdi run finished",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [0, 0],
+      "webhookId": "aecdi-run"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "loose" },
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $json.body.high }}",
+              "rightValue": 0,
+              "operator": { "type": "number", "operation": "gt" }
+            },
+            {
+              "id": "c2",
+              "leftValue": "={{ $json.body.status }}",
+              "rightValue": "error",
+              "operator": { "type": "string", "operation": "equals" }
+            }
+          ],
+          "combinator": "or"
+        },
+        "options": {}
+      },
+      "id": "a1f0c6c2-0001-4c1e-9a10-000000000002",
+      "name": "High findings or error?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [260, 0]
+    },
+    {
+      "parameters": {
+        "fromEmail": "aecdi@example.com",
+        "toEmail": "qc-lead@example.com",
+        "subject": "={{ '[AEC QC] ' + $json.body.project + ': ' + ($json.body.status === 'ok' ? $json.body.high + ' high-severity potential discrepancies' : 'run failed') }}",
+        "emailFormat": "text",
+        "text": "={{ 'Project: ' + $json.body.project + '\\nStatus: ' + $json.body.status + '\\nFindings: ' + $json.body.findings + ' (' + $json.body.high + ' high, ' + $json.body.needs_review + ' needs review)\\nRedlines not incorporated: ' + $json.body.markups_not_incorporated + '\\nUnreadable pages: ' + $json.body.unreadable_pages + '\\nIssue log: ' + $json.body.issue_log + '\\nMarked-up set: ' + $json.body.review_pdf + '\\n\\nAll items are potential discrepancies for engineer review.' }}",
+        "options": {}
+      },
+      "id": "a1f0c6c2-0001-4c1e-9a10-000000000003",
+      "name": "Email QC lead",
+      "type": "n8n-nodes-base.emailSend",
+      "typeVersion": 2.1,
+      "position": [520, -80]
+    }
+  ],
+  "connections": {
+    "aecdi run finished": { "main": [[{ "node": "High findings or error?", "type": "main", "index": 0 }]] },
+    "High findings or error?": { "main": [[{ "node": "Email QC lead", "type": "main", "index": 0 }], []] }
+  },
+  "settings": { "executionOrder": "v1" },
+  "meta": {
+    "aecdi_usage": "Run the watcher as a service: aecdi watch <inbox> --out <out> --interval 300 --notify-url https://<n8n-host>/webhook/aecdi-run . Replace the example e-mail addresses and attach SMTP credentials to the Email node."
+  }
+}

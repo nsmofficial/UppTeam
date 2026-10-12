@@ -1,0 +1,6135 @@
+{
+  "summary": {
+    "dev": {
+      "projects": 1,
+      "shipped": 32,
+      "tp": 32,
+      "defects": 27,
+      "detected": 27,
+      "weight_total": 65,
+      "weight_detected": 65,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "severity_weighted_recall": 1.0,
+      "per_type": {
+        "missing_info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 9,
+          "detected": 9,
+          "fp": 0
+        },
+        "quantity_mismatch": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 4,
+          "detected": 4,
+          "fp": 0
+        },
+        "dimension_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 2,
+          "detected": 2,
+          "fp": 0
+        },
+        "cross_discipline_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 4,
+          "detected": 4,
+          "fp": 0
+        },
+        "spec_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 3,
+          "detected": 3,
+          "fp": 0
+        },
+        "revision_issue": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 3,
+          "detected": 3,
+          "fp": 0
+        },
+        "tag_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 1,
+          "detected": 1,
+          "fp": 0
+        },
+        "model_mismatch": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 1,
+          "detected": 1,
+          "fp": 0
+        }
+      },
+      "tiers": {
+        "confirmed": {
+          "n": 23,
+          "tp": 23,
+          "precision": 1.0
+        },
+        "probable": {
+          "n": 9,
+          "tp": 9,
+          "precision": 1.0
+        }
+      },
+      "localisation": {
+        "detected_with_gt": 27,
+        "localised": 27
+      },
+      "localisation_rate": 1.0,
+      "gate": {
+        "anchors_checked": 73,
+        "anchors_verified": 73,
+        "rejected_by_gate": 0
+      },
+      "needs_review": {
+        "n": 1,
+        "on_trap": 1,
+        "on_defect": 0
+      },
+      "trap_violations": 0,
+      "missed": [],
+      "fp_list": []
+    },
+    "test": {
+      "projects": 40,
+      "shipped": 651,
+      "tp": 651,
+      "defects": 560,
+      "detected": 560,
+      "weight_total": 1334,
+      "weight_detected": 1334,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "severity_weighted_recall": 1.0,
+      "per_type": {
+        "missing_info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 195,
+          "detected": 195,
+          "fp": 0
+        },
+        "quantity_mismatch": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 88,
+          "detected": 88,
+          "fp": 0
+        },
+        "dimension_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 35,
+          "detected": 35,
+          "fp": 0
+        },
+        "cross_discipline_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 81,
+          "detected": 81,
+          "fp": 0
+        },
+        "spec_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 61,
+          "detected": 61,
+          "fp": 0
+        },
+        "revision_issue": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 59,
+          "detected": 59,
+          "fp": 0
+        },
+        "tag_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 21,
+          "detected": 21,
+          "fp": 0
+        },
+        "model_mismatch": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 20,
+          "detected": 20,
+          "fp": 0
+        }
+      },
+      "tiers": {
+        "confirmed": {
+          "n": 470,
+          "tp": 470,
+          "precision": 1.0
+        },
+        "probable": {
+          "n": 181,
+          "tp": 181,
+          "precision": 1.0
+        }
+      },
+      "localisation": {
+        "detected_with_gt": 551,
+        "localised": 551
+      },
+      "localisation_rate": 1.0,
+      "gate": {
+        "anchors_checked": 1530,
+        "anchors_verified": 1530,
+        "rejected_by_gate": 0
+      },
+      "needs_review": {
+        "n": 40,
+        "on_trap": 40,
+        "on_defect": 0
+      },
+      "trap_violations": 0,
+      "missed": [],
+      "fp_list": []
+    },
+    "holdout": {
+      "projects": 20,
+      "shipped": 318,
+      "tp": 318,
+      "defects": 270,
+      "detected": 270,
+      "weight_total": 648,
+      "weight_detected": 648,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "severity_weighted_recall": 1.0,
+      "per_type": {
+        "missing_info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 99,
+          "detected": 99,
+          "fp": 0
+        },
+        "quantity_mismatch": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 34,
+          "detected": 34,
+          "fp": 0
+        },
+        "dimension_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 19,
+          "detected": 19,
+          "fp": 0
+        },
+        "cross_discipline_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 46,
+          "detected": 46,
+          "fp": 0
+        },
+        "spec_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 29,
+          "detected": 29,
+          "fp": 0
+        },
+        "revision_issue": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 25,
+          "detected": 25,
+          "fp": 0
+        },
+        "tag_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 10,
+          "detected": 10,
+          "fp": 0
+        },
+        "model_mismatch": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 8,
+          "detected": 8,
+          "fp": 0
+        }
+      },
+      "tiers": {
+        "confirmed": {
+          "n": 231,
+          "tp": 231,
+          "precision": 1.0
+        },
+        "probable": {
+          "n": 87,
+          "tp": 87,
+          "precision": 1.0
+        }
+      },
+      "localisation": {
+        "detected_with_gt": 266,
+        "localised": 266
+      },
+      "localisation_rate": 1.0,
+      "gate": {
+        "anchors_checked": 745,
+        "anchors_verified": 745,
+        "rejected_by_gate": 0
+      },
+      "needs_review": {
+        "n": 20,
+        "on_trap": 20,
+        "on_defect": 0
+      },
+      "trap_violations": 0,
+      "missed": [],
+      "fp_list": []
+    },
+    "metric": {
+      "projects": 10,
+      "shipped": 166,
+      "tp": 166,
+      "defects": 143,
+      "detected": 143,
+      "weight_total": 341,
+      "weight_detected": 341,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "severity_weighted_recall": 1.0,
+      "per_type": {
+        "missing_info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 50,
+          "detected": 50,
+          "fp": 0
+        },
+        "quantity_mismatch": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 23,
+          "detected": 23,
+          "fp": 0
+        },
+        "dimension_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 10,
+          "detected": 10,
+          "fp": 0
+        },
+        "cross_discipline_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 17,
+          "detected": 17,
+          "fp": 0
+        },
+        "spec_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 18,
+          "detected": 18,
+          "fp": 0
+        },
+        "revision_issue": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 15,
+          "detected": 15,
+          "fp": 0
+        },
+        "tag_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 3,
+          "detected": 3,
+          "fp": 0
+        },
+        "model_mismatch": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 7,
+          "detected": 7,
+          "fp": 0
+        }
+      },
+      "tiers": {
+        "confirmed": {
+          "n": 117,
+          "tp": 117,
+          "precision": 1.0
+        },
+        "probable": {
+          "n": 49,
+          "tp": 49,
+          "precision": 1.0
+        }
+      },
+      "localisation": {
+        "detected_with_gt": 143,
+        "localised": 143
+      },
+      "localisation_rate": 1.0,
+      "gate": {
+        "anchors_checked": 391,
+        "anchors_verified": 391,
+        "rejected_by_gate": 0
+      },
+      "needs_review": {
+        "n": 10,
+        "on_trap": 10,
+        "on_defect": 0
+      },
+      "trap_violations": 0,
+      "missed": [],
+      "fp_list": []
+    },
+    "clean": {
+      "projects": 5,
+      "shipped": 0,
+      "tp": 0,
+      "defects": 0,
+      "detected": 0,
+      "weight_total": 0,
+      "weight_detected": 0,
+      "fp": 0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "severity_weighted_recall": null,
+      "per_type": {
+        "missing_info": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 0,
+          "detected": 0,
+          "fp": 0
+        },
+        "quantity_mismatch": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 0,
+          "detected": 0,
+          "fp": 0
+        },
+        "dimension_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 0,
+          "detected": 0,
+          "fp": 0
+        },
+        "cross_discipline_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 0,
+          "detected": 0,
+          "fp": 0
+        },
+        "spec_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 0,
+          "detected": 0,
+          "fp": 0
+        },
+        "revision_issue": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 0,
+          "detected": 0,
+          "fp": 0
+        },
+        "tag_conflict": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 0,
+          "detected": 0,
+          "fp": 0
+        },
+        "model_mismatch": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "defects": 0,
+          "detected": 0,
+          "fp": 0
+        }
+      },
+      "tiers": {
+        "confirmed": {
+          "n": 0,
+          "tp": 0,
+          "precision": null
+        },
+        "probable": {
+          "n": 0,
+          "tp": 0,
+          "precision": null
+        }
+      },
+      "localisation": {
+        "detected_with_gt": 0,
+        "localised": 0
+      },
+      "localisation_rate": null,
+      "gate": {
+        "anchors_checked": 15,
+        "anchors_verified": 15,
+        "rejected_by_gate": 0
+      },
+      "needs_review": {
+        "n": 5,
+        "on_trap": 5,
+        "on_defect": 0
+      },
+      "trap_violations": 0,
+      "missed": [],
+      "fp_list": []
+    },
+    "determinism": {
+      "runs": 2,
+      "identical": true,
+      "findings": 33
+    },
+    "hallucination_injection": {
+      "requests": 5,
+      "honest_conflicts": 3,
+      "fabricated": 25,
+      "fabricated_rejected": 25,
+      "fabricated_shipped": 0,
+      "honest_corroborated": 3,
+      "catch_rate": 1.0,
+      "unsupported_injected": 5,
+      "unsupported_shipped": 5,
+      "unsupported_tier": [
+        "probable"
+      ],
+      "llm_stats": {
+        "llm_findings_raw": 33,
+        "llm_shipped": 8,
+        "llm_rejected_by_gate": 25,
+        "llm_model": "llm:mock-adversarial"
+      },
+      "rejection_reasons": [
+        "",
+        "missing page/bbox",
+        "snippet 'D1X' not found at cited location",
+        "snippet 'D2X' not found at cited location",
+        "snippet 'EXHAUST FAN, CEILINGX' not found at cited location",
+        "snippet 'Economizer: not integrated, with baromet' not found at cited location"
+      ]
+    },
+    "timing": {
+      "sets": 76,
+      "mean_seconds": 1.36,
+      "max_seconds": 1.99
+    }
+  },
+  "per_project": {
+    "dev": {
+      "seed_00": {
+        "shipped": 32,
+        "tp": 32,
+        "fp": [],
+        "defects": 27,
+        "detected": 27,
+        "weight_total": 65,
+        "weight_detected": 65,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 23,
+            "tp": 23
+          },
+          "probable": {
+            "n": 9,
+            "tp": 9
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "dimension_conflict": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "revision_issue": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "spec_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "missing_info": {
+            "tp": 10,
+            "fp": 0,
+            "defects": 9,
+            "detected": 9
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 27,
+          "localised": 27
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 73,
+          "anchors_verified": 73,
+          "rejected_by_gate": 0
+        }
+      }
+    },
+    "test": {
+      "seed_01": {
+        "shipped": 7,
+        "tp": 7,
+        "fp": [],
+        "defects": 7,
+        "detected": 7,
+        "weight_total": 14,
+        "weight_detected": 14,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 5,
+            "tp": 5
+          },
+          "probable": {
+            "n": 2,
+            "tp": 2
+          }
+        },
+        "per_type": {
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 5,
+            "detected": 5
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 7,
+          "localised": 7
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 18,
+          "anchors_verified": 18,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_02": {
+        "shipped": 15,
+        "tp": 15,
+        "fp": [],
+        "defects": 12,
+        "detected": 12,
+        "weight_total": 27,
+        "weight_detected": 27,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 11,
+            "tp": 11
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 5,
+            "detected": 5
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 12,
+          "localised": 12
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 34,
+          "anchors_verified": 34,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_03": {
+        "shipped": 22,
+        "tp": 22,
+        "fp": [],
+        "defects": 20,
+        "detected": 20,
+        "weight_total": 47,
+        "weight_detected": 47,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 16,
+            "tp": 16
+          },
+          "probable": {
+            "n": 6,
+            "tp": 6
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "revision_issue": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 8,
+            "fp": 0,
+            "defects": 8,
+            "detected": 8
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 20,
+          "localised": 20
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 53,
+          "anchors_verified": 53,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_04": {
+        "shipped": 12,
+        "tp": 12,
+        "fp": [],
+        "defects": 12,
+        "detected": 12,
+        "weight_total": 30,
+        "weight_detected": 30,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 10,
+            "tp": 10
+          },
+          "probable": {
+            "n": 2,
+            "tp": 2
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 12,
+          "localised": 12
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 30,
+          "anchors_verified": 30,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_05": {
+        "shipped": 14,
+        "tp": 14,
+        "fp": [],
+        "defects": 14,
+        "detected": 14,
+        "weight_total": 34,
+        "weight_detected": 34,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 10,
+            "tp": 10
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "revision_issue": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 13,
+          "localised": 13
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 32,
+          "anchors_verified": 32,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_06": {
+        "shipped": 17,
+        "tp": 17,
+        "fp": [],
+        "defects": 14,
+        "detected": 14,
+        "weight_total": 31,
+        "weight_detected": 31,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 11,
+            "tp": 11
+          },
+          "probable": {
+            "n": 6,
+            "tp": 6
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 8,
+            "fp": 0,
+            "defects": 7,
+            "detected": 7
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 14,
+          "localised": 14
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 37,
+          "anchors_verified": 37,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_07": {
+        "shipped": 10,
+        "tp": 10,
+        "fp": [],
+        "defects": 8,
+        "detected": 8,
+        "weight_total": 19,
+        "weight_detected": 19,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 7,
+            "tp": 7
+          },
+          "probable": {
+            "n": 3,
+            "tp": 3
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 8,
+          "localised": 8
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 25,
+          "anchors_verified": 25,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_08": {
+        "shipped": 22,
+        "tp": 22,
+        "fp": [],
+        "defects": 17,
+        "detected": 17,
+        "weight_total": 44,
+        "weight_detected": 44,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 15,
+            "tp": 15
+          },
+          "probable": {
+            "n": 7,
+            "tp": 7
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "dimension_conflict": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 16,
+          "localised": 16
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 52,
+          "anchors_verified": 52,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_09": {
+        "shipped": 15,
+        "tp": 15,
+        "fp": [],
+        "defects": 12,
+        "detected": 12,
+        "weight_total": 26,
+        "weight_detected": 26,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 11,
+            "tp": 11
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 12,
+          "localised": 12
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 32,
+          "anchors_verified": 32,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_10": {
+        "shipped": 14,
+        "tp": 14,
+        "fp": [],
+        "defects": 13,
+        "detected": 13,
+        "weight_total": 34,
+        "weight_detected": 34,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 11,
+            "tp": 11
+          },
+          "probable": {
+            "n": 3,
+            "tp": 3
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "quantity_mismatch": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 13,
+          "localised": 13
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 36,
+          "anchors_verified": 36,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_11": {
+        "shipped": 18,
+        "tp": 18,
+        "fp": [],
+        "defects": 15,
+        "detected": 15,
+        "weight_total": 36,
+        "weight_detected": 36,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 13,
+            "tp": 13
+          },
+          "probable": {
+            "n": 5,
+            "tp": 5
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 7,
+            "fp": 0,
+            "defects": 6,
+            "detected": 6
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 15,
+          "localised": 15
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 42,
+          "anchors_verified": 42,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_12": {
+        "shipped": 19,
+        "tp": 19,
+        "fp": [],
+        "defects": 16,
+        "detected": 16,
+        "weight_total": 37,
+        "weight_detected": 37,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 14,
+            "tp": 14
+          },
+          "probable": {
+            "n": 5,
+            "tp": 5
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 9,
+            "fp": 0,
+            "defects": 8,
+            "detected": 8
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 16,
+          "localised": 16
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 42,
+          "anchors_verified": 42,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_13": {
+        "shipped": 13,
+        "tp": 13,
+        "fp": [],
+        "defects": 11,
+        "detected": 11,
+        "weight_total": 26,
+        "weight_detected": 26,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 11,
+            "tp": 11
+          },
+          "probable": {
+            "n": 2,
+            "tp": 2
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 5,
+            "detected": 5
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 10,
+          "localised": 10
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 32,
+          "anchors_verified": 32,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_14": {
+        "shipped": 18,
+        "tp": 18,
+        "fp": [],
+        "defects": 15,
+        "detected": 15,
+        "weight_total": 37,
+        "weight_detected": 37,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 11,
+            "tp": 11
+          },
+          "probable": {
+            "n": 7,
+            "tp": 7
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 15,
+          "localised": 15
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 41,
+          "anchors_verified": 41,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_15": {
+        "shipped": 19,
+        "tp": 19,
+        "fp": [],
+        "defects": 17,
+        "detected": 17,
+        "weight_total": 42,
+        "weight_detected": 42,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 13,
+            "tp": 13
+          },
+          "probable": {
+            "n": 6,
+            "tp": 6
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 6,
+            "detected": 6
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 17,
+          "localised": 17
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 45,
+          "anchors_verified": 45,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_16": {
+        "shipped": 13,
+        "tp": 13,
+        "fp": [],
+        "defects": 12,
+        "detected": 12,
+        "weight_total": 28,
+        "weight_detected": 28,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 8,
+            "tp": 8
+          },
+          "probable": {
+            "n": 5,
+            "tp": 5
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 12,
+          "localised": 12
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 32,
+          "anchors_verified": 32,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_17": {
+        "shipped": 15,
+        "tp": 15,
+        "fp": [],
+        "defects": 14,
+        "detected": 14,
+        "weight_total": 33,
+        "weight_detected": 33,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 12,
+            "tp": 12
+          },
+          "probable": {
+            "n": 3,
+            "tp": 3
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "revision_issue": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 5,
+            "detected": 5
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 14,
+          "localised": 14
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 34,
+          "anchors_verified": 34,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_18": {
+        "shipped": 12,
+        "tp": 12,
+        "fp": [],
+        "defects": 10,
+        "detected": 10,
+        "weight_total": 23,
+        "weight_detected": 23,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 9,
+            "tp": 9
+          },
+          "probable": {
+            "n": 3,
+            "tp": 3
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 10,
+          "localised": 10
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 31,
+          "anchors_verified": 31,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_19": {
+        "shipped": 22,
+        "tp": 22,
+        "fp": [],
+        "defects": 18,
+        "detected": 18,
+        "weight_total": 44,
+        "weight_detected": 44,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 16,
+            "tp": 16
+          },
+          "probable": {
+            "n": 6,
+            "tp": 6
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "dimension_conflict": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 6,
+            "detected": 6
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 18,
+          "localised": 18
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 51,
+          "anchors_verified": 51,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_20": {
+        "shipped": 21,
+        "tp": 21,
+        "fp": [],
+        "defects": 16,
+        "detected": 16,
+        "weight_total": 39,
+        "weight_detected": 39,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 16,
+            "tp": 16
+          },
+          "probable": {
+            "n": 5,
+            "tp": 5
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "dimension_conflict": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 5,
+            "detected": 5
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 16,
+          "localised": 16
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 49,
+          "anchors_verified": 49,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_21": {
+        "shipped": 19,
+        "tp": 19,
+        "fp": [],
+        "defects": 18,
+        "detected": 18,
+        "weight_total": 41,
+        "weight_detected": 41,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 13,
+            "tp": 13
+          },
+          "probable": {
+            "n": 6,
+            "tp": 6
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "spec_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "missing_info": {
+            "tp": 8,
+            "fp": 0,
+            "defects": 7,
+            "detected": 7
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 18,
+          "localised": 18
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 44,
+          "anchors_verified": 44,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_22": {
+        "shipped": 14,
+        "tp": 14,
+        "fp": [],
+        "defects": 13,
+        "detected": 13,
+        "weight_total": 32,
+        "weight_detected": 32,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 11,
+            "tp": 11
+          },
+          "probable": {
+            "n": 3,
+            "tp": 3
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 12,
+          "localised": 12
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 31,
+          "anchors_verified": 31,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_23": {
+        "shipped": 16,
+        "tp": 16,
+        "fp": [],
+        "defects": 14,
+        "detected": 14,
+        "weight_total": 31,
+        "weight_detected": 31,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 13,
+            "tp": 13
+          },
+          "probable": {
+            "n": 3,
+            "tp": 3
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 6,
+            "detected": 6
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 14,
+          "localised": 14
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 39,
+          "anchors_verified": 39,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_24": {
+        "shipped": 13,
+        "tp": 13,
+        "fp": [],
+        "defects": 12,
+        "detected": 12,
+        "weight_total": 29,
+        "weight_detected": 29,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 7,
+            "tp": 7
+          },
+          "probable": {
+            "n": 6,
+            "tp": 6
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 12,
+          "localised": 12
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 29,
+          "anchors_verified": 29,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_25": {
+        "shipped": 23,
+        "tp": 23,
+        "fp": [],
+        "defects": 20,
+        "detected": 20,
+        "weight_total": 47,
+        "weight_detected": 47,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 15,
+            "tp": 15
+          },
+          "probable": {
+            "n": 8,
+            "tp": 8
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "revision_issue": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "spec_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "missing_info": {
+            "tp": 8,
+            "fp": 0,
+            "defects": 7,
+            "detected": 7
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 19,
+          "localised": 19
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 48,
+          "anchors_verified": 48,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_26": {
+        "shipped": 16,
+        "tp": 16,
+        "fp": [],
+        "defects": 13,
+        "detected": 13,
+        "weight_total": 29,
+        "weight_detected": 29,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 12,
+            "tp": 12
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 5,
+            "detected": 5
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 13,
+          "localised": 13
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 38,
+          "anchors_verified": 38,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_27": {
+        "shipped": 14,
+        "tp": 14,
+        "fp": [],
+        "defects": 12,
+        "detected": 12,
+        "weight_total": 30,
+        "weight_detected": 30,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 9,
+            "tp": 9
+          },
+          "probable": {
+            "n": 5,
+            "tp": 5
+          }
+        },
+        "per_type": {
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "missing_info": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 11,
+          "localised": 11
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 33,
+          "anchors_verified": 33,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_28": {
+        "shipped": 14,
+        "tp": 14,
+        "fp": [],
+        "defects": 14,
+        "detected": 14,
+        "weight_total": 35,
+        "weight_detected": 35,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 10,
+            "tp": 10
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 13,
+          "localised": 13
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 34,
+          "anchors_verified": 34,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_29": {
+        "shipped": 11,
+        "tp": 11,
+        "fp": [],
+        "defects": 9,
+        "detected": 9,
+        "weight_total": 23,
+        "weight_detected": 23,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 7,
+            "tp": 7
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 9,
+          "localised": 9
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 25,
+          "anchors_verified": 25,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_30": {
+        "shipped": 16,
+        "tp": 16,
+        "fp": [],
+        "defects": 12,
+        "detected": 12,
+        "weight_total": 29,
+        "weight_detected": 29,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 12,
+            "tp": 12
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "dimension_conflict": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 11,
+          "localised": 11
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 37,
+          "anchors_verified": 37,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_31": {
+        "shipped": 13,
+        "tp": 13,
+        "fp": [],
+        "defects": 11,
+        "detected": 11,
+        "weight_total": 28,
+        "weight_detected": 28,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 9,
+            "tp": 9
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 11,
+          "localised": 11
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 32,
+          "anchors_verified": 32,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_32": {
+        "shipped": 19,
+        "tp": 19,
+        "fp": [],
+        "defects": 17,
+        "detected": 17,
+        "weight_total": 38,
+        "weight_detected": 38,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 15,
+            "tp": 15
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 8,
+            "fp": 0,
+            "defects": 8,
+            "detected": 8
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 17,
+          "localised": 17
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 44,
+          "anchors_verified": 44,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_33": {
+        "shipped": 20,
+        "tp": 20,
+        "fp": [],
+        "defects": 17,
+        "detected": 17,
+        "weight_total": 42,
+        "weight_detected": 42,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 15,
+            "tp": 15
+          },
+          "probable": {
+            "n": 5,
+            "tp": 5
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 17,
+          "localised": 17
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 50,
+          "anchors_verified": 50,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_34": {
+        "shipped": 23,
+        "tp": 23,
+        "fp": [],
+        "defects": 18,
+        "detected": 18,
+        "weight_total": 45,
+        "weight_detected": 45,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 17,
+            "tp": 17
+          },
+          "probable": {
+            "n": 6,
+            "tp": 6
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "dimension_conflict": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 7,
+            "fp": 0,
+            "defects": 6,
+            "detected": 6
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 18,
+          "localised": 18
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 56,
+          "anchors_verified": 56,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_35": {
+        "shipped": 19,
+        "tp": 19,
+        "fp": [],
+        "defects": 16,
+        "detected": 16,
+        "weight_total": 37,
+        "weight_detected": 37,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 15,
+            "tp": 15
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 8,
+            "fp": 0,
+            "defects": 7,
+            "detected": 7
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 16,
+          "localised": 16
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 43,
+          "anchors_verified": 43,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_36": {
+        "shipped": 16,
+        "tp": 16,
+        "fp": [],
+        "defects": 14,
+        "detected": 14,
+        "weight_total": 34,
+        "weight_detected": 34,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 11,
+            "tp": 11
+          },
+          "probable": {
+            "n": 5,
+            "tp": 5
+          }
+        },
+        "per_type": {
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "spec_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "missing_info": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 14,
+          "localised": 14
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 41,
+          "anchors_verified": 41,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_37": {
+        "shipped": 17,
+        "tp": 17,
+        "fp": [],
+        "defects": 15,
+        "detected": 15,
+        "weight_total": 34,
+        "weight_detected": 34,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 13,
+            "tp": 13
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 7,
+            "fp": 0,
+            "defects": 7,
+            "detected": 7
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 15,
+          "localised": 15
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 41,
+          "anchors_verified": 41,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_38": {
+        "shipped": 20,
+        "tp": 20,
+        "fp": [],
+        "defects": 17,
+        "detected": 17,
+        "weight_total": 38,
+        "weight_detected": 38,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 14,
+            "tp": 14
+          },
+          "probable": {
+            "n": 6,
+            "tp": 6
+          }
+        },
+        "per_type": {
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "missing_info": {
+            "tp": 8,
+            "fp": 0,
+            "defects": 7,
+            "detected": 7
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 16,
+          "localised": 16
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 47,
+          "anchors_verified": 47,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_39": {
+        "shipped": 18,
+        "tp": 18,
+        "fp": [],
+        "defects": 14,
+        "detected": 14,
+        "weight_total": 34,
+        "weight_detected": 34,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 12,
+            "tp": 12
+          },
+          "probable": {
+            "n": 6,
+            "tp": 6
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "dimension_conflict": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 6,
+            "detected": 6
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 14,
+          "localised": 14
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 43,
+          "anchors_verified": 43,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_40": {
+        "shipped": 12,
+        "tp": 12,
+        "fp": [],
+        "defects": 11,
+        "detected": 11,
+        "weight_total": 27,
+        "weight_detected": 27,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 10,
+            "tp": 10
+          },
+          "probable": {
+            "n": 2,
+            "tp": 2
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 11,
+          "localised": 11
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 27,
+          "anchors_verified": 27,
+          "rejected_by_gate": 0
+        }
+      }
+    },
+    "holdout": {
+      "seed_41": {
+        "shipped": 15,
+        "tp": 15,
+        "fp": [],
+        "defects": 12,
+        "detected": 12,
+        "weight_total": 30,
+        "weight_detected": 30,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 9,
+            "tp": 9
+          },
+          "probable": {
+            "n": 6,
+            "tp": 6
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 12,
+          "localised": 12
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 35,
+          "anchors_verified": 35,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_42": {
+        "shipped": 13,
+        "tp": 13,
+        "fp": [],
+        "defects": 11,
+        "detected": 11,
+        "weight_total": 26,
+        "weight_detected": 26,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 10,
+            "tp": 10
+          },
+          "probable": {
+            "n": 3,
+            "tp": 3
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 5,
+            "detected": 5
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 11,
+          "localised": 11
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 32,
+          "anchors_verified": 32,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_43": {
+        "shipped": 19,
+        "tp": 19,
+        "fp": [],
+        "defects": 14,
+        "detected": 14,
+        "weight_total": 35,
+        "weight_detected": 35,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 12,
+            "tp": 12
+          },
+          "probable": {
+            "n": 7,
+            "tp": 7
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "dimension_conflict": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 14,
+          "localised": 14
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 42,
+          "anchors_verified": 42,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_44": {
+        "shipped": 15,
+        "tp": 15,
+        "fp": [],
+        "defects": 13,
+        "detected": 13,
+        "weight_total": 31,
+        "weight_detected": 31,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 11,
+            "tp": 11
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 5,
+            "detected": 5
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 12,
+          "localised": 12
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 33,
+          "anchors_verified": 33,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_45": {
+        "shipped": 11,
+        "tp": 11,
+        "fp": [],
+        "defects": 9,
+        "detected": 9,
+        "weight_total": 21,
+        "weight_detected": 21,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 8,
+            "tp": 8
+          },
+          "probable": {
+            "n": 3,
+            "tp": 3
+          }
+        },
+        "per_type": {
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 8,
+          "localised": 8
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 29,
+          "anchors_verified": 29,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_46": {
+        "shipped": 18,
+        "tp": 18,
+        "fp": [],
+        "defects": 15,
+        "detected": 15,
+        "weight_total": 36,
+        "weight_detected": 36,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 14,
+            "tp": 14
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 7,
+            "fp": 0,
+            "defects": 6,
+            "detected": 6
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 14,
+          "localised": 14
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 39,
+          "anchors_verified": 39,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_47": {
+        "shipped": 21,
+        "tp": 21,
+        "fp": [],
+        "defects": 18,
+        "detected": 18,
+        "weight_total": 43,
+        "weight_detected": 43,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 15,
+            "tp": 15
+          },
+          "probable": {
+            "n": 6,
+            "tp": 6
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "revision_issue": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 8,
+            "fp": 0,
+            "defects": 7,
+            "detected": 7
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 18,
+          "localised": 18
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 47,
+          "anchors_verified": 47,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_48": {
+        "shipped": 14,
+        "tp": 14,
+        "fp": [],
+        "defects": 14,
+        "detected": 14,
+        "weight_total": 33,
+        "weight_detected": 33,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 10,
+            "tp": 10
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "missing_info": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 6,
+            "detected": 6
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 14,
+          "localised": 14
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 36,
+          "anchors_verified": 36,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_49": {
+        "shipped": 18,
+        "tp": 18,
+        "fp": [],
+        "defects": 14,
+        "detected": 14,
+        "weight_total": 34,
+        "weight_detected": 34,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 13,
+            "tp": 13
+          },
+          "probable": {
+            "n": 5,
+            "tp": 5
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 6,
+            "detected": 6
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 14,
+          "localised": 14
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 44,
+          "anchors_verified": 44,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_50": {
+        "shipped": 16,
+        "tp": 16,
+        "fp": [],
+        "defects": 13,
+        "detected": 13,
+        "weight_total": 32,
+        "weight_detected": 32,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 13,
+            "tp": 13
+          },
+          "probable": {
+            "n": 3,
+            "tp": 3
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 13,
+          "localised": 13
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 36,
+          "anchors_verified": 36,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_51": {
+        "shipped": 22,
+        "tp": 22,
+        "fp": [],
+        "defects": 17,
+        "detected": 17,
+        "weight_total": 42,
+        "weight_detected": 42,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 14,
+            "tp": 14
+          },
+          "probable": {
+            "n": 8,
+            "tp": 8
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "missing_info": {
+            "tp": 7,
+            "fp": 0,
+            "defects": 6,
+            "detected": 6
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 17,
+          "localised": 17
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 47,
+          "anchors_verified": 47,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_52": {
+        "shipped": 18,
+        "tp": 18,
+        "fp": [],
+        "defects": 17,
+        "detected": 17,
+        "weight_total": 40,
+        "weight_detected": 40,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 13,
+            "tp": 13
+          },
+          "probable": {
+            "n": 5,
+            "tp": 5
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "missing_info": {
+            "tp": 7,
+            "fp": 0,
+            "defects": 6,
+            "detected": 6
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 17,
+          "localised": 17
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 43,
+          "anchors_verified": 43,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_53": {
+        "shipped": 16,
+        "tp": 16,
+        "fp": [],
+        "defects": 12,
+        "detected": 12,
+        "weight_total": 29,
+        "weight_detected": 29,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 11,
+            "tp": 11
+          },
+          "probable": {
+            "n": 5,
+            "tp": 5
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 5,
+            "detected": 5
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 12,
+          "localised": 12
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 43,
+          "anchors_verified": 43,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_54": {
+        "shipped": 13,
+        "tp": 13,
+        "fp": [],
+        "defects": 10,
+        "detected": 10,
+        "weight_total": 25,
+        "weight_detected": 25,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 10,
+            "tp": 10
+          },
+          "probable": {
+            "n": 3,
+            "tp": 3
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 10,
+          "localised": 10
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 31,
+          "anchors_verified": 31,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_55": {
+        "shipped": 12,
+        "tp": 12,
+        "fp": [],
+        "defects": 12,
+        "detected": 12,
+        "weight_total": 27,
+        "weight_detected": 27,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 9,
+            "tp": 9
+          },
+          "probable": {
+            "n": 3,
+            "tp": 3
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 5,
+            "detected": 5
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 12,
+          "localised": 12
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 26,
+          "anchors_verified": 26,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_56": {
+        "shipped": 14,
+        "tp": 14,
+        "fp": [],
+        "defects": 12,
+        "detected": 12,
+        "weight_total": 28,
+        "weight_detected": 28,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 12,
+            "tp": 12
+          },
+          "probable": {
+            "n": 2,
+            "tp": 2
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "missing_info": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 12,
+          "localised": 12
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 33,
+          "anchors_verified": 33,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_57": {
+        "shipped": 17,
+        "tp": 17,
+        "fp": [],
+        "defects": 16,
+        "detected": 16,
+        "weight_total": 40,
+        "weight_detected": 40,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 12,
+            "tp": 12
+          },
+          "probable": {
+            "n": 5,
+            "tp": 5
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 7,
+            "fp": 0,
+            "defects": 6,
+            "detected": 6
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 16,
+          "localised": 16
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 40,
+          "anchors_verified": 40,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_58": {
+        "shipped": 16,
+        "tp": 16,
+        "fp": [],
+        "defects": 14,
+        "detected": 14,
+        "weight_total": 32,
+        "weight_detected": 32,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 12,
+            "tp": 12
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 6,
+            "detected": 6
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 13,
+          "localised": 13
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 37,
+          "anchors_verified": 37,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_59": {
+        "shipped": 12,
+        "tp": 12,
+        "fp": [],
+        "defects": 11,
+        "detected": 11,
+        "weight_total": 26,
+        "weight_detected": 26,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 10,
+            "tp": 10
+          },
+          "probable": {
+            "n": 2,
+            "tp": 2
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "quantity_mismatch": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 11,
+          "localised": 11
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 28,
+          "anchors_verified": 28,
+          "rejected_by_gate": 0
+        }
+      },
+      "seed_60": {
+        "shipped": 18,
+        "tp": 18,
+        "fp": [],
+        "defects": 16,
+        "detected": 16,
+        "weight_total": 38,
+        "weight_detected": 38,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 13,
+            "tp": 13
+          },
+          "probable": {
+            "n": 5,
+            "tp": 5
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 5,
+            "detected": 5
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 16,
+          "localised": 16
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 44,
+          "anchors_verified": 44,
+          "rejected_by_gate": 0
+        }
+      }
+    },
+    "metric": {
+      "metric_61": {
+        "shipped": 17,
+        "tp": 17,
+        "fp": [],
+        "defects": 15,
+        "detected": 15,
+        "weight_total": 36,
+        "weight_detected": 36,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 10,
+            "tp": 10
+          },
+          "probable": {
+            "n": 7,
+            "tp": 7
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "missing_info": {
+            "tp": 7,
+            "fp": 0,
+            "defects": 7,
+            "detected": 7
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 15,
+          "localised": 15
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 40,
+          "anchors_verified": 40,
+          "rejected_by_gate": 0
+        }
+      },
+      "metric_62": {
+        "shipped": 18,
+        "tp": 18,
+        "fp": [],
+        "defects": 16,
+        "detected": 16,
+        "weight_total": 38,
+        "weight_detected": 38,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 13,
+            "tp": 13
+          },
+          "probable": {
+            "n": 5,
+            "tp": 5
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "revision_issue": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 5,
+            "detected": 5
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 16,
+          "localised": 16
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 43,
+          "anchors_verified": 43,
+          "rejected_by_gate": 0
+        }
+      },
+      "metric_63": {
+        "shipped": 9,
+        "tp": 9,
+        "fp": [],
+        "defects": 9,
+        "detected": 9,
+        "weight_total": 21,
+        "weight_detected": 21,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 7,
+            "tp": 7
+          },
+          "probable": {
+            "n": 2,
+            "tp": 2
+          }
+        },
+        "per_type": {
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 9,
+          "localised": 9
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 20,
+          "anchors_verified": 20,
+          "rejected_by_gate": 0
+        }
+      },
+      "metric_64": {
+        "shipped": 18,
+        "tp": 18,
+        "fp": [],
+        "defects": 16,
+        "detected": 16,
+        "weight_total": 38,
+        "weight_detected": 38,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 14,
+            "tp": 14
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "revision_issue": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 6,
+            "detected": 6
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 16,
+          "localised": 16
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 42,
+          "anchors_verified": 42,
+          "rejected_by_gate": 0
+        }
+      },
+      "metric_65": {
+        "shipped": 16,
+        "tp": 16,
+        "fp": [],
+        "defects": 14,
+        "detected": 14,
+        "weight_total": 31,
+        "weight_detected": 31,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 11,
+            "tp": 11
+          },
+          "probable": {
+            "n": 5,
+            "tp": 5
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 6,
+            "detected": 6
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 14,
+          "localised": 14
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 37,
+          "anchors_verified": 37,
+          "rejected_by_gate": 0
+        }
+      },
+      "metric_66": {
+        "shipped": 16,
+        "tp": 16,
+        "fp": [],
+        "defects": 13,
+        "detected": 13,
+        "weight_total": 31,
+        "weight_detected": 31,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 12,
+            "tp": 12
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "spec_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 13,
+          "localised": 13
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 37,
+          "anchors_verified": 37,
+          "rejected_by_gate": 0
+        }
+      },
+      "metric_67": {
+        "shipped": 17,
+        "tp": 17,
+        "fp": [],
+        "defects": 14,
+        "detected": 14,
+        "weight_total": 34,
+        "weight_detected": 34,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 13,
+            "tp": 13
+          },
+          "probable": {
+            "n": 4,
+            "tp": 4
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 5,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 14,
+          "localised": 14
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 43,
+          "anchors_verified": 43,
+          "rejected_by_gate": 0
+        }
+      },
+      "metric_68": {
+        "shipped": 17,
+        "tp": 17,
+        "fp": [],
+        "defects": 15,
+        "detected": 15,
+        "weight_total": 34,
+        "weight_detected": 34,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 11,
+            "tp": 11
+          },
+          "probable": {
+            "n": 6,
+            "tp": 6
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 6,
+            "detected": 6
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 15,
+          "localised": 15
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 38,
+          "anchors_verified": 38,
+          "rejected_by_gate": 0
+        }
+      },
+      "metric_69": {
+        "shipped": 20,
+        "tp": 20,
+        "fp": [],
+        "defects": 16,
+        "detected": 16,
+        "weight_total": 42,
+        "weight_detected": 42,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 15,
+            "tp": 15
+          },
+          "probable": {
+            "n": 5,
+            "tp": 5
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "dimension_conflict": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "quantity_mismatch": {
+            "tp": 4,
+            "fp": 0,
+            "defects": 4,
+            "detected": 4
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "revision_issue": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 16,
+          "localised": 16
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 50,
+          "anchors_verified": 50,
+          "rejected_by_gate": 0
+        }
+      },
+      "metric_70": {
+        "shipped": 18,
+        "tp": 18,
+        "fp": [],
+        "defects": 15,
+        "detected": 15,
+        "weight_total": 36,
+        "weight_detected": 36,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 11,
+            "tp": 11
+          },
+          "probable": {
+            "n": 7,
+            "tp": 7
+          }
+        },
+        "per_type": {
+          "cross_discipline_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "dimension_conflict": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "quantity_mismatch": {
+            "tp": 3,
+            "fp": 0,
+            "defects": 3,
+            "detected": 3
+          },
+          "spec_conflict": {
+            "tp": 2,
+            "fp": 0,
+            "defects": 2,
+            "detected": 2
+          },
+          "missing_info": {
+            "tp": 6,
+            "fp": 0,
+            "defects": 5,
+            "detected": 5
+          },
+          "model_mismatch": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "tag_conflict": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          },
+          "revision_issue": {
+            "tp": 1,
+            "fp": 0,
+            "defects": 1,
+            "detected": 1
+          }
+        },
+        "localisation": {
+          "detected_with_gt": 15,
+          "localised": 15
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 41,
+          "anchors_verified": 41,
+          "rejected_by_gate": 0
+        }
+      }
+    },
+    "clean": {
+      "clean_01": {
+        "shipped": 0,
+        "tp": 0,
+        "fp": [],
+        "defects": 0,
+        "detected": 0,
+        "weight_total": 0,
+        "weight_detected": 0,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 0,
+            "tp": 0
+          },
+          "probable": {
+            "n": 0,
+            "tp": 0
+          }
+        },
+        "per_type": {},
+        "localisation": {
+          "detected_with_gt": 0,
+          "localised": 0
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 3,
+          "anchors_verified": 3,
+          "rejected_by_gate": 0
+        }
+      },
+      "clean_02": {
+        "shipped": 0,
+        "tp": 0,
+        "fp": [],
+        "defects": 0,
+        "detected": 0,
+        "weight_total": 0,
+        "weight_detected": 0,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 0,
+            "tp": 0
+          },
+          "probable": {
+            "n": 0,
+            "tp": 0
+          }
+        },
+        "per_type": {},
+        "localisation": {
+          "detected_with_gt": 0,
+          "localised": 0
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 3,
+          "anchors_verified": 3,
+          "rejected_by_gate": 0
+        }
+      },
+      "clean_03": {
+        "shipped": 0,
+        "tp": 0,
+        "fp": [],
+        "defects": 0,
+        "detected": 0,
+        "weight_total": 0,
+        "weight_detected": 0,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 0,
+            "tp": 0
+          },
+          "probable": {
+            "n": 0,
+            "tp": 0
+          }
+        },
+        "per_type": {},
+        "localisation": {
+          "detected_with_gt": 0,
+          "localised": 0
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 3,
+          "anchors_verified": 3,
+          "rejected_by_gate": 0
+        }
+      },
+      "clean_04": {
+        "shipped": 0,
+        "tp": 0,
+        "fp": [],
+        "defects": 0,
+        "detected": 0,
+        "weight_total": 0,
+        "weight_detected": 0,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 0,
+            "tp": 0
+          },
+          "probable": {
+            "n": 0,
+            "tp": 0
+          }
+        },
+        "per_type": {},
+        "localisation": {
+          "detected_with_gt": 0,
+          "localised": 0
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 3,
+          "anchors_verified": 3,
+          "rejected_by_gate": 0
+        }
+      },
+      "clean_05": {
+        "shipped": 0,
+        "tp": 0,
+        "fp": [],
+        "defects": 0,
+        "detected": 0,
+        "weight_total": 0,
+        "weight_detected": 0,
+        "missed": [],
+        "by_tier": {
+          "confirmed": {
+            "n": 0,
+            "tp": 0
+          },
+          "probable": {
+            "n": 0,
+            "tp": 0
+          }
+        },
+        "per_type": {},
+        "localisation": {
+          "detected_with_gt": 0,
+          "localised": 0
+        },
+        "needs_review": {
+          "n": 1,
+          "on_trap": 1,
+          "on_defect": 0
+        },
+        "trap_violations": [],
+        "gate": {
+          "anchors_checked": 3,
+          "anchors_verified": 3,
+          "rejected_by_gate": 0
+        }
+      }
+    }
+  }
+}

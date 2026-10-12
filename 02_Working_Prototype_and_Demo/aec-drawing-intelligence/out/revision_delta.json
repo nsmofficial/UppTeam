@@ -1,0 +1,107 @@
+[
+  {
+    "sheet": "A-101",
+    "kind": "added",
+    "before": null,
+    "after": "108A",
+    "bbox": [
+      596.33,
+      402.58,
+      612.67,
+      412.19
+    ],
+    "page_b": 1,
+    "clouded": true,
+    "bbox_a": null,
+    "entities": [
+      "DOOR:108A"
+    ],
+    "column": null
+  },
+  {
+    "sheet": "A-101",
+    "kind": "graphic",
+    "before": null,
+    "after": null,
+    "bbox": [
+      590.0,
+      421.0,
+      618.0,
+      449.0
+    ],
+    "page_b": 1,
+    "clouded": true,
+    "bbox_a": null,
+    "entities": [
+      "SHEET:A-101"
+    ],
+    "column": null
+  },
+  {
+    "sheet": "A-601",
+    "kind": "added",
+    "before": null,
+    "after": "108A | D1 | 3'-0\" | 7'-0\" | WD | HM | 20 MIN | HW-1 | 08 14 16 | ",
+    "bbox": [
+      40.0,
+      206.0,
+      660.0,
+      220.0
+    ],
+    "page_b": 2,
+    "clouded": true,
+    "bbox_a": null,
+    "entities": [
+      "DOOR:108A"
+    ],
+    "column": null
+  },
+  {
+    "sheet": "A-601",
+    "kind": "changed",
+    "before": "3'-0\"",
+    "after": "3'-6\"",
+    "bbox": [
+      122.0,
+      234.0,
+      170.0,
+      248.0
+    ],
+    "page_b": 2,
+    "clouded": false,
+    "bbox_a": [
+      122.0,
+      220.0,
+      170.0,
+      234.0
+    ],
+    "entities": [
+      "DOOR:110"
+    ],
+    "column": "WIDTH"
+  },
+  {
+    "sheet": "M-601",
+    "kind": "changed",
+    "before": "10 TON",
+    "after": "12.5 TON",
+    "bbox": [
+      252.0,
+      94.0,
+      314.0,
+      108.0
+    ],
+    "page_b": 5,
+    "clouded": true,
+    "bbox_a": [
+      252.0,
+      94.0,
+      314.0,
+      108.0
+    ],
+    "entities": [
+      "EQUIP:RTU-1"
+    ],
+    "column": "CAPACITY"
+  }
+]

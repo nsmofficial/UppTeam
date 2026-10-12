@@ -1,0 +1,232 @@
+[
+  {
+    "fingerprint": "b69cf68fbc",
+    "finding_id": "F-001",
+    "body": {
+      "title": "[F-001] cross discipline conflict: EQUIP:EF-1",
+      "description": "Potential discrepancy: EF-1 requires 120/1 power (M-601) but no branch circuit serves it on the panel schedules.\n\nEvidence:\n- CD_Set_RevB.pdf sheet M-601 (page 6) at x=65, y=143 pt: \"EF-1\" (equipment row)\n- CD_Set_RevB.pdf sheet M-601 (page 6) at x=336, y=143 pt: \"120/1\" (required power)\n\nSource: AEC Drawing Intelligence (rule:XD-002, tier confirmed, confidence 0.90, fingerprint b69cf68fbc). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "5fdb2cd945",
+    "finding_id": "F-002",
+    "body": {
+      "title": "[F-002] cross discipline conflict: EQUIP:RTU-1",
+      "description": "Potential discrepancy: RTU-1 operating weight 2,450 LB (M-601) exceeds the 2,000 LB design weight on S-101.\n\nEvidence:\n- CD_Set_RevB.pdf sheet M-601 (page 6) at x=437, y=101 pt: \"2,450\" (equipment weight)\n- CD_Set_RevB.pdf sheet S-101 (page 4) at x=330, y=299 pt: \"RTU-1: DESIGN MAX OPERATING WEIGHT 2,000 LB\" (structural design weight)\n\nSource: AEC Drawing Intelligence (rule:XD-004, tier confirmed, confidence 0.95, fingerprint 5fdb2cd945). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "913975f053",
+    "finding_id": "F-003",
+    "body": {
+      "title": "[F-003] cross discipline conflict: EQUIP:RTU-2",
+      "description": "Potential discrepancy: RTU-2 is scheduled 460/3 on M-601 but is fed 208/3 from panel LA ckt 7,9,11 on E-601.\n\nEvidence:\n- CD_Set_RevB.pdf sheet M-601 (page 6) at x=336, y=115 pt: \"460/3\" (mechanical V/PH)\n- CD_Set_RevB.pdf sheet E-601 (page 7) at x=339, y=157 pt: \"208/3\" (electrical V/PH)\n- CD_Set_RevB.pdf sheet E-601 (page 7) at x=229, y=157 pt: \"RTU-2\" (panel load)\n\nSource: AEC Drawing Intelligence (rule:XD-001, tier confirmed, confidence 0.95, fingerprint 913975f053). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "3ce39f74f4",
+    "finding_id": "F-004",
+    "body": {
+      "title": "[F-004] cross discipline conflict: EQUIP:RTU-3",
+      "description": "Potential discrepancy: RTU-3 MCA 30 A (M-601) exceeds the 15 A breaker on panel HA ckt 13,15,17 (E-601).\n\nEvidence:\n- CD_Set_RevB.pdf sheet M-601 (page 6) at x=382, y=129 pt: \"30\" (MCA)\n- CD_Set_RevB.pdf sheet E-601 (page 7) at x=433, y=115 pt: \"15\" (breaker)\n- CD_Set_RevB.pdf sheet E-601 (page 7) at x=229, y=115 pt: \"RTU-3\" (panel load)\n\nSource: AEC Drawing Intelligence (rule:XD-003, tier confirmed, confidence 0.95, fingerprint 3ce39f74f4). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "4088b64454",
+    "finding_id": "F-005",
+    "body": {
+      "title": "[F-005] dimension conflict: GRID:1-2",
+      "description": "Potential discrepancy: grid 1-2 is dimensioned differently across sheets: A-101 = 24'-6\"; S-101 = 25'-0\".\n\nEvidence:\n- CD_Set_RevB.pdf sheet A-101 (page 2) at x=262, y=136 pt: \"24'-6\"\" (grid dimension)\n- CD_Set_RevB.pdf sheet S-101 (page 4) at x=262, y=136 pt: \"25'-0\"\" (grid dimension)\n\nSource: AEC Drawing Intelligence (rule:DIM-003, tier confirmed, confidence 0.95, fingerprint 4088b64454). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "47d0c71a04",
+    "finding_id": "F-006",
+    "body": {
+      "title": "[F-006] dimension conflict: GRID:1-4",
+      "description": "Potential discrepancy on A-101: chained dimensions 24'-6\" + 30'-0\" + 25'-0\" = 79'-6\", but the overall dimension (grid 1-4) reads 80'-0\".\n\nEvidence:\n- CD_Set_RevB.pdf sheet A-101 (page 2) at x=510, y=116 pt: \"80'-0\"\" (overall dimension)\n- CD_Set_RevB.pdf sheet A-101 (page 2) at x=262, y=136 pt: \"24'-6\"\" (chain dimension)\n- CD_Set_RevB.pdf sheet A-101 (page 2) at x=510, y=136 pt: \"30'-0\"\" (chain dimension)\n- CD_Set_RevB.pdf sheet A-101 (page 2) at x=758, y=136 pt: \"25'-0\"\" (chain dimension)\n\nSource: AEC Drawing Intelligence (rule:DIM-001, tier confirmed, confidence 0.97, fingerprint 47d0c71a04). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "02412fedd9",
+    "finding_id": "F-007",
+    "body": {
+      "title": "[F-007] dimension conflict: GRID:1-4",
+      "description": "Potential discrepancy on S-101: chained dimensions 25'-0\" + 32'-0\" + 25'-0\" = 82'-0\", but the overall dimension (grid 1-4) reads 80'-0\".\n\nEvidence:\n- CD_Set_RevB.pdf sheet S-101 (page 4) at x=510, y=116 pt: \"80'-0\"\" (overall dimension)\n- CD_Set_RevB.pdf sheet S-101 (page 4) at x=262, y=136 pt: \"25'-0\"\" (chain dimension)\n- CD_Set_RevB.pdf sheet S-101 (page 4) at x=510, y=136 pt: \"32'-0\"\" (chain dimension)\n- CD_Set_RevB.pdf sheet S-101 (page 4) at x=758, y=136 pt: \"25'-0\"\" (chain dimension)\n\nSource: AEC Drawing Intelligence (rule:DIM-001, tier confirmed, confidence 0.97, fingerprint 02412fedd9). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "f9b00daa92",
+    "finding_id": "F-008",
+    "body": {
+      "title": "[F-008] dimension conflict: GRID:2-3",
+      "description": "Potential discrepancy: grid 2-3 is dimensioned differently across sheets: A-101 = 30'-0\"; S-101 = 32'-0\".\n\nEvidence:\n- CD_Set_RevB.pdf sheet A-101 (page 2) at x=510, y=136 pt: \"30'-0\"\" (grid dimension)\n- CD_Set_RevB.pdf sheet S-101 (page 4) at x=510, y=136 pt: \"32'-0\"\" (grid dimension)\n\nSource: AEC Drawing Intelligence (rule:DIM-003, tier confirmed, confidence 0.95, fingerprint f9b00daa92). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "a4a33698c2",
+    "finding_id": "F-009",
+    "body": {
+      "title": "[F-009] quantity mismatch: BOQ:08-100, DOORTYPE:D1",
+      "description": "Potential discrepancy: door type D1: 9 door(s) in the schedule (101, 102, 103, 104, 105, 106, 108A, 110, 122); BOQ 08-100 = 8 EA.\n\nEvidence:\n- BOQ_RevB.xlsx BOQ!E6: \"8\" (BOQ quantity)\n- CD_Set_RevB.pdf sheet A-601 (page 3) at x=103, y=101 pt: \"D1\" (schedule row)\n- CD_Set_RevB.pdf sheet A-601 (page 3) at x=103, y=283 pt: \"D1\" (schedule row)\n\nSource: AEC Drawing Intelligence (rule:QTY-001, tier confirmed, confidence 0.95, fingerprint a4a33698c2). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "5dcba3ac4f",
+    "finding_id": "F-010",
+    "body": {
+      "title": "[F-010] quantity mismatch: BOQ:08-110, DOORTYPE:D2",
+      "description": "Potential discrepancy: door type D2: 3 door(s) in the schedule (107, 108, 109); BOQ 08-110 = 2 EA.\n\nEvidence:\n- BOQ_RevB.xlsx BOQ!E7: \"2\" (BOQ quantity)\n- CD_Set_RevB.pdf sheet A-601 (page 3) at x=103, y=185 pt: \"D2\" (schedule row)\n- CD_Set_RevB.pdf sheet A-601 (page 3) at x=103, y=227 pt: \"D2\" (schedule row)\n\nSource: AEC Drawing Intelligence (rule:QTY-001, tier confirmed, confidence 0.95, fingerprint 5dcba3ac4f). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "238ba1af4f",
+    "finding_id": "F-011",
+    "body": {
+      "title": "[F-011] quantity mismatch: BOQ:23-130, EQUIP:EF-1",
+      "description": "Potential discrepancy: EF-1: schedule M-601 QTY = 1, BOQ 23-130 = 2 EA.\n\nEvidence:\n- CD_Set_RevB.pdf sheet M-601 (page 6) at x=236, y=143 pt: \"1\" (schedule quantity)\n- BOQ_RevB.xlsx BOQ!E14: \"2\" (BOQ quantity)\n\nSource: AEC Drawing Intelligence (rule:QTY-002, tier confirmed, confidence 0.95, fingerprint 238ba1af4f). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "c42e0f66ad",
+    "finding_id": "F-012",
+    "body": {
+      "title": "[F-012] revision issue: DOOR:110",
+      "description": "Potential discrepancy: A-601 changed between Rev A and Rev B without a revision cloud: '3'-0\"' -> '3'-6\"' (WIDTH).\n\nEvidence:\n- CD_Set_RevB.pdf sheet A-601 (page 3) at x=146, y=241 pt: \"3'-6\"\" (Rev B content)\n- CD_Set_RevA.pdf sheet A-601 (page 3) at x=146, y=227 pt: \"3'-0\"\" (Rev A content)\n\nSource: AEC Drawing Intelligence (rule:REV-001, tier confirmed, confidence 0.95, fingerprint c42e0f66ad). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "d493ece881",
+    "finding_id": "F-016",
+    "body": {
+      "title": "[F-016] missing info: DOOR:102",
+      "description": "Potential discrepancy: door 102 on A-601 has no value for HDW SET (non-rated / not applicable is shown as '-', blank means missing).\n\nEvidence:\n- CD_Set_RevB.pdf sheet A-601 (page 3) at x=62, y=115 pt: \"102\" (schedule row)\n- CD_Set_RevB.pdf sheet A-601 (page 3) at x=413, y=115 pt: \"\" (blank HDW SET)\n\nSource: AEC Drawing Intelligence (rule:MISS-003, tier confirmed, confidence 0.95, fingerprint d493ece881). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "4b0d25b1fe",
+    "finding_id": "F-017",
+    "body": {
+      "title": "[F-017] missing info: DOOR:105, HW:HW-9",
+      "description": "Potential discrepancy: door 105 calls for hardware set HW-9, which is not defined in Section 08 71 00 (defined: HW-1, HW-2, HW-3, HW-4).\n\nEvidence:\n- CD_Set_RevB.pdf sheet A-601 (page 3) at x=413, y=157 pt: \"HW-9\" (schedule hardware set)\n- Project_Manual.pdf sheet 08 71 00 (page 3) at x=101, y=86 pt: \"SECTION 08 71 00\" (spec section)\n\nSource: AEC Drawing Intelligence (rule:MISS-004, tier confirmed, confidence 0.95, fingerprint 4b0d25b1fe). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "8ab22a8ddc",
+    "finding_id": "F-018",
+    "body": {
+      "title": "[F-018] missing info: DOOR:121",
+      "description": "Potential discrepancy: door tag 121 on A-101 has no row in the door schedule (A-601).\n\nEvidence:\n- CD_Set_RevB.pdf sheet A-101 (page 2) at x=542, y=407 pt: \"121\" (plan tag)\n\nSource: AEC Drawing Intelligence (rule:MISS-001, tier confirmed, confidence 0.95, fingerprint 8ab22a8ddc). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "107674be70",
+    "finding_id": "F-019",
+    "body": {
+      "title": "[F-019] missing info: EQUIP:EF-4",
+      "description": "Potential discrepancy: equipment tag EF-4 on M-101 is not in the equipment schedule (M-601).\n\nEvidence:\n- CD_Set_RevB.pdf sheet M-101 (page 5) at x=546, y=542 pt: \"EF-4\" (plan tag)\n\nSource: AEC Drawing Intelligence (rule:MISS-009, tier confirmed, confidence 0.95, fingerprint 107674be70). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "fe60e906b2",
+    "finding_id": "F-020",
+    "body": {
+      "title": "[F-020] missing info: SHEET:A-501",
+      "description": "Potential discrepancy: sheet A-501 is referenced/listed but is not included in the drawing set.\n\nEvidence:\n- CD_Set_RevB.pdf sheet A-101 (page 2) at x=260, y=669 pt: \"A-501\" (sheet reference)\n- CD_Set_RevB.pdf sheet G-001 (page 1) at x=95, y=246 pt: \"A-501\" (sheet index)\n\nSource: AEC Drawing Intelligence (rule:MISS-006, tier confirmed, confidence 0.95, fingerprint fe60e906b2). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "74c39453ad",
+    "finding_id": "F-021",
+    "body": {
+      "title": "[F-021] missing info: SPEC:08 41 13",
+      "description": "Potential discrepancy: Section 08 41 13 is referenced 4 time(s) (schedules / BOQ / notes) but is not included in the project manual.\n\nEvidence:\n- CD_Set_RevB.pdf sheet A-601 (page 3) at x=475, y=255 pt: \"08 41 13\" (door schedule)\n- CD_Set_RevB.pdf sheet A-601 (page 3) at x=475, y=269 pt: \"08 41 13\" (door schedule)\n- CD_Set_RevB.pdf sheet A-601 (page 3) at x=413, y=480 pt: \"SEE SECTION 08 41 13\" (drawing note)\n- BOQ_RevB.xlsx BOQ!C8: \"08 41 13\" (BOQ line)\n\nSource: AEC Drawing Intelligence (rule:MISS-005, tier confirmed, confidence 0.95, fingerprint 74c39453ad). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "1516aa1339",
+    "finding_id": "F-022",
+    "body": {
+      "title": "[F-022] model mismatch: DOOR:103",
+      "description": "Potential discrepancy: door 103 on A-601 differs from the model export: HDW SET: sheet 'HW-1' vs model 'HW-3'.\n\nEvidence:\n- CD_Set_RevB.pdf sheet A-601 (page 3) at x=413, y=129 pt: \"HW-1\" (issued schedule value)\n- Revit_Door_Schedule_Export.txt Hardware Set line 6: \"HW-3\" (model export (Revit))\n\nSource: AEC Drawing Intelligence (rule:NATIVE-001, tier confirmed, confidence 0.95, fingerprint 1516aa1339). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "990333d420",
+    "finding_id": "F-023",
+    "body": {
+      "title": "[F-023] quantity mismatch: BOQ:23-150, EQUIP:EF-3",
+      "description": "Potential discrepancy: EF-3 is marked NIC (not in contract) but BOQ 23-150 prices 1 EA.\n\nEvidence:\n- BOQ_RevB.xlsx BOQ!E16: \"1\" (BOQ quantity)\n- CD_Set_RevB.pdf sheet M-601 (page 6) at x=599, y=171 pt: \"NIC - BY OWNER\" (schedule remarks)\n- CD_Set_RevB.pdf sheet M-101 (page 5) at x=826, y=542 pt: \"(NIC)\" (plan NIC note)\n\nSource: AEC Drawing Intelligence (rule:QTY-003, tier confirmed, confidence 0.95, fingerprint 990333d420). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "016f53dbf5",
+    "finding_id": "F-024",
+    "body": {
+      "title": "[F-024] revision issue: SHEET:M-601",
+      "description": "Potential discrepancy: M-601 content changed (1 change(s)) but its title block still shows Rev A; the revision was not issued on this sheet.\n\nEvidence:\n- CD_Set_RevB.pdf sheet M-601 (page 6) at x=1052, y=143 pt: \"A\" (latest revision in title block)\n- CD_Set_RevB.pdf sheet M-601 (page 6) at x=283, y=101 pt: \"12.5 TON\" (changed content)\n\nSource: AEC Drawing Intelligence (rule:REV-002, tier confirmed, confidence 0.90, fingerprint 016f53dbf5). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "324d567ae8",
+    "finding_id": "F-025",
+    "body": {
+      "title": "[F-025] tag conflict: DOOR:107",
+      "description": "Potential discrepancy: door number 107 is tagged 2 times on the plans; door numbers must be unique.\n\nEvidence:\n- CD_Set_RevB.pdf sheet A-101 (page 2) at x=452, y=407 pt: \"107\" (plan tag)\n- CD_Set_RevB.pdf sheet A-101 (page 2) at x=568, y=407 pt: \"107\" (plan tag)\n\nSource: AEC Drawing Intelligence (rule:TAG-001, tier confirmed, confidence 0.95, fingerprint 324d567ae8). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  },
+  {
+    "fingerprint": "66cbd99cb1",
+    "finding_id": "F-030",
+    "body": {
+      "title": "[F-030] missing info: SHEET:S-101",
+      "description": "Potential discrepancy: sheet S-101 is in the set but missing from the sheet index on G-001.\n\nEvidence:\n- CD_Set_RevB.pdf sheet S-101 (page 4) at x=1083, y=742 pt: \"S-101\" (title block sheet number)\n- CD_Set_RevB.pdf sheet G-001 (page 1) at x=95, y=310 pt: \"E-601\" (sheet index (last entry))\n\nSource: AEC Drawing Intelligence (rule:MISS-007, tier confirmed, confidence 0.90, fingerprint 66cbd99cb1). Potential discrepancy for engineer review.",
+      "status": "draft",
+      "issueSubtypeId": "<ACC issue subtype id>"
+    }
+  }
+]
